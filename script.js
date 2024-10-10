@@ -1,16 +1,16 @@
-var correctq1 = $('.correct');
-var incorrectq1 = $('button').not('#correct');
+
+var correctq1 = $('#correct');
+var incorrectq1 = $('#incorrect1, #incorrect2, #incorrect3');
 var score = 0;
 var totalq = 10;
 
-correctq1.on("click", togglec);
-incorrectq1.on("click", togglei);
-
-function togglec(){
-    $(this).correctq1.toggleClass("correct");
+correctq1.on("click", function() {
+    correctq1.toggleClass("correct"); 
     score++;
-}
+    console.log("Score: " + score);
+});
 
-function togglei(){
+
+incorrectq1.on("click", function() {
     $(this).toggleClass("incorrect"); 
-}
+});
