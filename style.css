@@ -6,7 +6,7 @@ html{
 .questionOne{
     display: flex;
     flex-direction: row;
-    width: 150;
+    font-size: 24px;
     
 }
 #flag{
