@@ -6,11 +6,12 @@ html{
 .questionOne{
     display: flex;
     flex-direction: row;
+    width: 150;
     
 }
 #flag{
-    width: 100px;
-    height: 50px;
+    width: 250px;
+    height: 150px;
 
 }
 .correct{
