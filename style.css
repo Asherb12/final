@@ -8,7 +8,11 @@ html{
     flex-direction: row;
     justify-content:space-between;
 }
+.flag{
+    width: 100px'
+    height: 50px;
 
+}
 .correct{
 color:green
 
