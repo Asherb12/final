@@ -3,13 +3,13 @@ html{
     border:10px solid gold;
     border-radius: 5px;
 }
-.question1{
+.questionOne{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    
 }
-.flag{
-    width: 100px'
+#flag{
+    width: 100px;
     height: 50px;
 
 }
