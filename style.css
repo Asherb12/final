@@ -13,6 +13,36 @@ html{
 .questionOne:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+.questionThree{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    transition-duration: 0.4s;
+}
+.questionThree:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.questionFive{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    transition-duration: 0.4s;
+}
+.questionFive:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.questionNine{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    transition-duration: 0.4s;
+}
+.questionNine:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
 #flag{
     width: 250px;
     height: 150px;
@@ -26,4 +56,9 @@ color: white;
 .incorrect{
 background-color: #D8232A;
 color: white;
+}
+/* to disable the buttons with DOM manip */
+.disable{
+    opacity: 0.6;
+    cursor: not-allowed;
 }
