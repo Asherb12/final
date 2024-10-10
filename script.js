@@ -1,5 +1,5 @@
-var correctq1 = $('#correct1');
-var incorrectq1 = $('#incorrect1');
+var correctq1 = $('#correct');
+var incorrectq1 = $('#incorrect');
 var score = 0;
 var totalq = 10;
 
