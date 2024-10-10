@@ -6,7 +6,7 @@ html{
 .questionOne{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    
 }
 #flag{
     width: 100px;
