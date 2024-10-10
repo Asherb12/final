@@ -19,10 +19,11 @@ html{
 
 }
 .correct{
-color:green
-
+background-color:green;
+color: white;
 
 }
 .incorrect{
-color: red;
+background-color: #D8232A;
+color: white;
 }
