@@ -55,12 +55,6 @@ color: white;
 background-color: #D8232A;
 color: white;
 }
-/* to disable the buttons with DOM manip */
-.disable{
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-
 .nextQuestionOne {
 text-decoration: solid;
 }
