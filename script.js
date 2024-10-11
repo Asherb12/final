@@ -30,11 +30,16 @@ correctq2.on("click", function() {
     correctq2.toggleClass("correct"); 
     score++;
     console.log("Score: " + score);
+    $("#correct2").attr("disabled", true);
+    $('#incorrect21,#incorrect22,#incorrect23').attr("disabled",true);
 });
 
 
 incorrectq2.on("click", function() {
     $(this).toggleClass("incorrect"); 
+    $('#correct2').attr("disabled", true);
+    correctq1.toggleClass("correct");
+    $('#incorrect21,#incorrect22,#incorrect23').attr("disabled",true);
 });
 
 // Question 3
@@ -45,11 +50,16 @@ correctq3.on("click", function() {
     correctq3.toggleClass("correct"); 
     score++;
     console.log("Score: " + score);
+    $("#correct3").attr("disabled", true);
+    $('#incorrect31,#incorrect32,#incorrect33').attr("disabled",true);
 });
 
 
 incorrectq3.on("click", function() {
     $(this).toggleClass("incorrect"); 
+    $('#correct3').attr("disabled", true);
+    correctq1.toggleClass("correct");
+    $('#incorrect31,#incorrect32,#incorrect33').attr("disabled",true);
 });
 
 
@@ -61,11 +71,16 @@ correctq4.on("click", function() {
     correctq4.toggleClass("correct"); 
     score++;
     console.log("Score: " + score);
+    $("#correct4").attr("disabled", true);
+    $('#incorrect41,#incorrect42,#incorrect43').attr("disabled",true);
 });
 
 
 incorrectq4.on("click", function() {
     $(this).toggleClass("incorrect"); 
+    $('#correct4').attr("disabled", true);
+    correctq1.toggleClass("correct");
+    $('#incorrect41,#incorrect42,#incorrect43').attr("disabled",true);
 });
 
 // Question 5
@@ -76,9 +91,14 @@ correctq5.on("click", function() {
     correctq5.toggleClass("correct"); 
     score++;
     console.log("Score: " + score);
+    $("#correct5").attr("disabled", true);
+    $('#incorrect51,#incorrect52,#incorrect53').attr("disabled",true);
 });
 
 
 incorrectq5.on("click", function() {
     $(this).toggleClass("incorrect"); 
+    $('#correct5').attr("disabled", true);
+    correctq1.toggleClass("correct");
+    $('#incorrect51,#incorrect52,#incorrect53').attr("disabled",true);
 });
