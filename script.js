@@ -46,3 +46,34 @@ correctq3.on("click", function() {
 incorrectq3.on("click", function() {
     $(this).toggleClass("incorrect"); 
 });
+
+
+// Question 4
+var correctq4 = $('#correct4');
+var incorrectq4 = $('#incorrect41, #incorrect42, #incorrect43');
+
+correctq4.on("click", function() {
+    correctq4.toggleClass("correct"); 
+    score++;
+    console.log("Score: " + score);
+});
+
+
+incorrectq4.on("click", function() {
+    $(this).toggleClass("incorrect"); 
+});
+
+// Question 5
+var correctq5 = $('#correct5');
+var incorrectq5 = $('#incorrect51, #incorrect52, #incorrect53');
+
+correctq5.on("click", function() {
+    correctq5.toggleClass("correct"); 
+    score++;
+    console.log("Score: " + score);
+});
+
+
+incorrectq5.on("click", function() {
+    $(this).toggleClass("incorrect"); 
+});
