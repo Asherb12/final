@@ -18,7 +18,7 @@ correctq1.on("click", function() {
 incorrectq1.on("click", function() {
     $(this).toggleClass("incorrect"); 
     $('#correct1').attr("disabled", true);
-    correctq1.toggleClass("correct");
+    $("#correct1").toggleClass("correct");
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 });
 
@@ -38,7 +38,7 @@ correctq2.on("click", function() {
 incorrectq2.on("click", function() {
     $(this).toggleClass("incorrect"); 
     $('#correct2').attr("disabled", true);
-    correctq3.toggleClass("correct");
+    correctq2.toggleClass("correct");
     $('#incorrect21,#incorrect22,#incorrect23').attr("disabled",true);
 });
 
