@@ -3,6 +3,19 @@ html{
     border:10px solid gold;
     border-radius: 5px;
 }
+
+a{
+text-decoration: none;
+}
+
+.start{
+color: black;
+border: 10px;
+border-style: solid;
+border-color: black;
+text-decoration: none;
+}
+
 .questionOne{
     display: flex;
     flex-direction: row;
@@ -55,6 +68,4 @@ color: white;
 background-color: #D8232A;
 color: white;
 }
-.nextQuestionOne {
-text-decoration: solid;
 }
