@@ -9,6 +9,7 @@ correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
     score++;
     console.log("Score: " + score);
+    $("#correct1").attr("disabled", true);
 });
 
 
