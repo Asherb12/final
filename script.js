@@ -10,13 +10,15 @@ correctq1.on("click", function() {
     score++;
     console.log("Score: " + score);
     $("#correct1").attr("disabled", true);
+    $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 });
 
 
 
 incorrectq1.on("click", function() {
     $(this).toggleClass("incorrect"); 
-    $(this).attr("disabled", true);
+    $('#correct1').attr("disabled", true);
+    $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 });
 
 // Question 2 
