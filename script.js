@@ -9,7 +9,7 @@ correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
     score++;
     console.log("Score: " + score);
-    $("#correct1").attr("disabled", true);
+    correctq1.attr("disabled", true);
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 });
 
@@ -38,7 +38,7 @@ correctq2.on("click", function() {
 incorrectq2.on("click", function() {
     $(this).toggleClass("incorrect"); 
     $('#correct2').attr("disabled", true);
-    correctq1.toggleClass("correct");
+    correctq3.toggleClass("correct");
     $('#incorrect21,#incorrect22,#incorrect23').attr("disabled",true);
 });
 
@@ -58,7 +58,7 @@ correctq3.on("click", function() {
 incorrectq3.on("click", function() {
     $(this).toggleClass("incorrect"); 
     $('#correct3').attr("disabled", true);
-    correctq1.toggleClass("correct");
+    correctq3.toggleClass("correct");
     $('#incorrect31,#incorrect32,#incorrect33').attr("disabled",true);
 });
 
@@ -79,7 +79,7 @@ correctq4.on("click", function() {
 incorrectq4.on("click", function() {
     $(this).toggleClass("incorrect"); 
     $('#correct4').attr("disabled", true);
-    correctq1.toggleClass("correct");
+    correctq4.toggleClass("correct");
     $('#incorrect41,#incorrect42,#incorrect43').attr("disabled",true);
 });
 
@@ -99,6 +99,6 @@ correctq5.on("click", function() {
 incorrectq5.on("click", function() {
     $(this).toggleClass("incorrect"); 
     $('#correct5').attr("disabled", true);
-    correctq1.toggleClass("correct");
+    correctq5.toggleClass("correct");
     $('#incorrect51,#incorrect52,#incorrect53').attr("disabled",true);
 });
