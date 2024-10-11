@@ -16,6 +16,7 @@ correctq1.on("click", function() {
 
 incorrectq1.on("click", function() {
     $(this).toggleClass("incorrect"); 
+    $(this).attr("disabled", true);
 });
 
 // Question 2 
