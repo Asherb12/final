@@ -18,6 +18,7 @@ correctq1.on("click", function() {
 incorrectq1.on("click", function() {
     $(this).toggleClass("incorrect"); 
     $('#correct1').attr("disabled", true);
+    correctq1.toggleClass("correct");
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 });
 
