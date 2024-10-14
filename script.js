@@ -26,7 +26,7 @@ incorrectq1.on("click", function() {
 // Question 2 forums
  forum1btnc.on("click", function(){
     var userInput = $('#forumq1c').val();
-    userInput = userInput.toLowerCase();
+    // userInput = userInput.toLowerCase();
     console.log(userInput);
     if( userInput == "norway"){
         score++ 
