@@ -23,9 +23,9 @@ incorrectq1.on("click", function() {
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 });
 // Question 2 forums
- forumq1c.on("click", function(){
+ forumq1c.on("input", function(){
     var userInput = $('#forumq1').val();
-   userInput = userInput.toLowerCase();
+    // userInput = userInput.toLowerCase();
     console.log(userInput);
     if( userInput == "norway"){
         score++ 
