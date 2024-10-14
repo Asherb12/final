@@ -26,6 +26,7 @@ position: absolute;
 .questionOne{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     font-size: 24px;
     transition-duration: 0.4s;
     
@@ -35,6 +36,7 @@ position: absolute;
 }
 .questionThree{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     font-size: 24px;
     transition-duration: 0.4s;
@@ -44,6 +46,7 @@ position: absolute;
 }
 .questionFive{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     font-size: 24px;
     transition-duration: 0.4s;
@@ -53,6 +56,7 @@ position: absolute;
 }
 .questionNine{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     font-size: 24px;
     transition-duration: 0.4s;
@@ -62,6 +66,8 @@ position: absolute;
 }
 
 #flag{
+    display: flex;
+    flex-wrap: wrap;
     width: 250px;
     height: 150px;
 
