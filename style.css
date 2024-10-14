@@ -8,19 +8,32 @@ a{
 color: black;
 text-decoration: none;
 }
+#well{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
 
-.start{
-top: 250px;
-left: 400px;
-font-size: 100px;
-color: white;
-background-color: red;
-border: 5px;
-border-style: solid;
-border-color: black;
-border-radius: 5px;
-padding: 50px;
-position: absolute;
+#start{
+    
+    top: 250px;
+    left: 400px;
+    font-size: 100px;
+    color: white;
+    background-color: red;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    padding: 50px;
+    
+}
+.startb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .questionOne{
@@ -29,6 +42,7 @@ position: absolute;
     flex-wrap: wrap;
     font-size: 24px;
     transition-duration: 0.4s;
+    border-radius: 12px;
     
 }
 .questionOne:hover{
@@ -40,6 +54,7 @@ position: absolute;
     flex-direction: row;
     font-size: 24px;
     transition-duration: 0.4s;
+    border-radius: 12px;
 }
 .questionThree:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -50,6 +65,7 @@ position: absolute;
     flex-direction: row;
     font-size: 24px;
     transition-duration: 0.4s;
+    border-radius: 12px;
 }
 .questionFive:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -60,6 +76,7 @@ position: absolute;
     flex-direction: row;
     font-size: 24px;
     transition-duration: 0.4s;
+    border-radius: 12px;
 }
 .questionNine:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
