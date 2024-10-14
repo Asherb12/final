@@ -40,12 +40,46 @@ text-decoration: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     font-size: 24px;
     transition-duration: 0.4s;
-    border-radius: 12px;
     
 }
-.questionOne:hover{
+#incorrect11{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
+#incorrect11:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect12{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
+#incorrect12:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#correct1{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
+#correct1:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect13{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+#incorrect13:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .questionThree{
@@ -56,7 +90,16 @@ text-decoration: none;
     transition-duration: 0.4s;
     border-radius: 12px;
 }
-.questionThree:hover{
+#incorrect21:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#correct2:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect22:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect23:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .questionFive{
@@ -67,7 +110,36 @@ text-decoration: none;
     transition-duration: 0.4s;
     border-radius: 12px;
 }
-.questionFive:hover{
+#incorrect31:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect32:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#correct3:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect33:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.questionSeven{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 24px;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+#incorrect41:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect42:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#correct4:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect43:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .questionNine{
@@ -78,7 +150,16 @@ text-decoration: none;
     transition-duration: 0.4s;
     border-radius: 12px;
 }
-.questionNine:hover{
+#incorrect51:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect52:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#correct5:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect53:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
