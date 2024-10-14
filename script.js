@@ -4,7 +4,8 @@ var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 var score = 0;
 var totalq = 10;
-var forumq1c = $('#forumq1')
+var forumq1c = $('#forumq1');
+var forum1btnjs = $('#forum1btn');
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
@@ -23,9 +24,8 @@ incorrectq1.on("click", function() {
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 });
 // Question 2 forums
- forumq1c.on("click", function(){
-    var userInput = $('#forumq1').val();
-   userInput = userInput.toLowerCase();
+ forum1btnjs.on("click", function(){
+    var userInput = forumq1c.val();
     console.log(userInput);
     if( userInput == "norway"){
         score++ 
