@@ -23,7 +23,7 @@ incorrectq1.on("click", function() {
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 });
 // Question 2 forums
- forum1.on("click",)
+ forum1.on("click",forumcorrect);
 
  function forumcorrect(){
     var userInput = $('.forumq[i]').val();
