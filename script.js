@@ -25,17 +25,22 @@ incorrectq1.on("click", function() {
 });
 // Question 2 forums
  forum1btnjs.on("click", function(){
-    var userInput = forumq1c.val();
+    var userInput = forumq1c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "norway"){
         score++ 
         console.log("score" + score);
         forumq1c.toggleClass("correct");
-        console.log("workp1")
+        forumq1c.attr("disabled", true);
+        forum1btnjs.attr("disabled",true);
+    
+       
     }
     else {
         forumq1c.toggleClass("incorrect");
-        console.log("workp2")
+        forumq1c.attr("disabled",true);
+        forum1btnjs.attr("disabled",true);
+        forumq1c.text("Norway");
     }
    
  });
