@@ -26,13 +26,16 @@ incorrectq1.on("click", function() {
  forumq1.on("click", function(){
     var userInput = $('.forumq1').val();
     userInput.toLowerCase();
+    console.log(userInput);
     if( userInput == "norway"){
         score++ 
         console.log("score" + score);
         forum1.toggleClass("correct");
+        console.log("workp1")
     }
     else {
         forum1.toggleClass("incorrect");
+        console.log("workp2")
     }
    
  });
