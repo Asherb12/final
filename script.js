@@ -5,7 +5,7 @@ var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 var score = 0;
 var totalq = 10;
 var forumq1c = $('#forumq1');
-var forum1btn = $('#forum1');
+var forum1btnc = $('#forum1btn');
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
@@ -24,7 +24,7 @@ incorrectq1.on("click", function() {
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 });
 // Question 2 forums
- forum1btn.on("click", function(){
+ forum1btnc.on("click", function(){
     var userInput = $('#forumq1c').val();
     userInput = userInput.toLowerCase();
     console.log(userInput);
