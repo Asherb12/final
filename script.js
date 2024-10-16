@@ -40,6 +40,7 @@ incorrectq1.on("click", function() {
         forumq1c.toggleClass("incorrect");
         forumq1c.attr("disabled",true);
         forum1btnjs.attr("disabled",true);
+        // fix wednesday
         forumq1c.text("Norway");
     }
    
