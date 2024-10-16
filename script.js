@@ -4,8 +4,7 @@ var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 var score = 0;
 var totalq = 10;
-var forumq1c = $('#forumq1');
-var forum1btnjs = $('#forum1btn');
+
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
@@ -24,6 +23,8 @@ incorrectq1.on("click", function() {
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 });
 
+var forumq1c = $('#forumq1');
+var forum1btnjs = $('#forum1btn');
 // Question 2 forums
  forum1btnjs.on("click", function(){
     var userInput = forumq1c.val().toLowerCase();
@@ -39,7 +40,7 @@ incorrectq1.on("click", function() {
     }
     else {
         forumq1c.toggleClass("incorrect");
-        forumq1c.text("Norway");
+        forumq1c.attr('placeholder','Norway');
         forumq1c.attr("disabled",true);
         forum1btnjs.attr("disabled",true);
     }
