@@ -23,6 +23,7 @@ incorrectq1.on("click", function() {
     $("#correct1").toggleClass("correct");
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 });
+
 // Question 2 forums
  forum1btnjs.on("click", function(){
     var userInput = forumq1c.val().toLowerCase();
@@ -38,10 +39,9 @@ incorrectq1.on("click", function() {
     }
     else {
         forumq1c.toggleClass("incorrect");
+        forumq1c.text("Norway");
         forumq1c.attr("disabled",true);
         forum1btnjs.attr("disabled",true);
-        // fix wednesday
-        forumq1c.text("Norway");
     }
    
  });
