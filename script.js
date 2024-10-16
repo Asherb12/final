@@ -121,7 +121,7 @@ var forum3btnjs = $('#forum3btn');
  forum3btnjs.on("click", function(){
     var userInput = forumq3c.val().toLowerCase();
     console.log(userInput);
-    if( userInput == "fe"){
+    if( userInput == "the last supper"){
         score++ 
         console.log("score" + score);
         forumq3c.toggleClass("correct");
@@ -166,7 +166,7 @@ var forum4btnjs = $('#forum4btn');
  forum4btnjs.on("click", function(){
     var userInput = forumq4c.val().toLowerCase();
     console.log(userInput);
-    if( userInput == ""){
+    if( userInput == "greece"){
         score++ 
         console.log("score" + score);
         forumq4c.toggleClass("correct");
@@ -202,7 +202,7 @@ incorrectq5.on("click", function() {
     correctq5.toggleClass("correct");
     $('#incorrect51,#incorrect52,#incorrect53').attr("disabled",true);
 });
-
+//  Question 10 form
 var forumq5c = $('#forumq5');
 var forum5btnjs = $('#forum5btn');
 
