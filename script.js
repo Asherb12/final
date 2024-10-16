@@ -4,8 +4,7 @@ var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 var score = 0;
 var totalq = 10;
-var forumq1c = $('#forumq1');
-var forum1btnjs = $('#forum1btn');
+
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
@@ -25,6 +24,9 @@ incorrectq1.on("click", function() {
 });
 
 // Question 2 forums
+var forumq1c = $('#forumq1');
+var forum1btnjs = $('#forum1btn');
+
  forum1btnjs.on("click", function(){
     var userInput = forumq1c.val().toLowerCase();
     console.log(userInput);
@@ -39,7 +41,6 @@ incorrectq1.on("click", function() {
     }
     else {
         forumq1c.toggleClass("incorrect");
-        forumq1c.text("Norway");
         forumq1c.attr("disabled",true);
         forum1btnjs.attr("disabled",true);
     }
@@ -66,7 +67,34 @@ incorrectq2.on("click", function() {
     $('#incorrect21,#incorrect22,#incorrect23').attr("disabled",true);
 });
 
-// Question 3
+
+// Question 4 forms 
+var forumq2c = $('#forumq2');
+var forum2btnjs = $('#forum2btn');
+
+ forum2btnjs.on("click", function(){
+    var userInput = forumq2c.val().toLowerCase();
+    console.log(userInput);
+    if( userInput == "clinton"){
+        score++ 
+        console.log("score" + score);
+        forumq2c.toggleClass("correct");
+        forumq2c.attr("disabled", true);
+        forum2btnjs.attr("disabled",true);
+    
+       
+    }
+    else {
+        forumq2c.toggleClass("incorrect");
+        forumq2c.attr("disabled",true);
+        forum2btnjs.attr("disabled",true);
+    }
+   
+ });
+
+
+
+// Question 5
 var correctq3 = $('#correct3');
 var incorrectq3 = $('#incorrect31, #incorrect32, #incorrect33');
 
@@ -86,8 +114,31 @@ incorrectq3.on("click", function() {
     $('#incorrect31,#incorrect32,#incorrect33').attr("disabled",true);
 });
 
+// Question 6 forms 
+var forumq3c = $('#forumq3');
+var forum3btnjs = $('#forum3btn');
 
-// Question 4
+ forum3btnjs.on("click", function(){
+    var userInput = forumq3c.val().toLowerCase();
+    console.log(userInput);
+    if( userInput == "fe"){
+        score++ 
+        console.log("score" + score);
+        forumq3c.toggleClass("correct");
+        forumq3c.attr("disabled", true);
+        forum3btnjs.attr("disabled",true);
+    
+       
+    }
+    else {
+        forumq3c.toggleClass("incorrect");
+        forumq3c.attr("disabled",true);
+        forum3btnjs.attr("disabled",true);
+    }
+   
+ });
+
+// Question 7 Multiple choice
 var correctq4 = $('#correct4');
 var incorrectq4 = $('#incorrect41, #incorrect42, #incorrect43');
 
@@ -107,7 +158,32 @@ incorrectq4.on("click", function() {
     $('#incorrect41,#incorrect42,#incorrect43').attr("disabled",true);
 });
 
-// Question 5
+// Question 8 forms 
+
+var forumq4c = $('#forumq4');
+var forum4btnjs = $('#forum4btn');
+
+ forum4btnjs.on("click", function(){
+    var userInput = forumq4c.val().toLowerCase();
+    console.log(userInput);
+    if( userInput == ""){
+        score++ 
+        console.log("score" + score);
+        forumq4c.toggleClass("correct");
+        forumq4c.attr("disabled", true);
+        forum4btnjs.attr("disabled",true);
+    
+       
+    }
+    else {
+        forumq4c.toggleClass("incorrect");
+        forumq4c.attr("disabled",true);
+        forum4btnjs.attr("disabled",true);
+    }
+   
+ });
+
+// Question 9 Multiple choice 
 var correctq5 = $('#correct5');
 var incorrectq5 = $('#incorrect51, #incorrect52, #incorrect53');
 
@@ -126,3 +202,26 @@ incorrectq5.on("click", function() {
     correctq5.toggleClass("correct");
     $('#incorrect51,#incorrect52,#incorrect53').attr("disabled",true);
 });
+
+var forumq5c = $('#forumq5');
+var forum5btnjs = $('#forum5btn');
+
+ forum5btnjs.on("click", function(){
+    var userInput = forumq5c.val().toLowerCase();
+    console.log(userInput);
+    if( userInput == "cheese"){
+        score++ 
+        console.log("score" + score);
+        forumq5c.toggleClass("correct");
+        forumq5c.attr("disabled", true);
+        forum5btnjs.attr("disabled",true);
+    
+       
+    }
+    else {
+        forumq5c.toggleClass("incorrect");
+        forumq5c.attr("disabled",true);
+        forum5btnjs.attr("disabled",true);
+    }
+   
+ });
