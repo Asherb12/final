@@ -92,14 +92,38 @@ text-decoration: none;
     transition-duration: 0.4s;
     border-radius: 12px;
 }
+#incorrect21{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
 #incorrect21:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#correct2{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
 }
 #correct2:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+#incorrect22{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
 #incorrect22:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect23{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
 }
 #incorrect23:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -112,14 +136,38 @@ text-decoration: none;
     transition-duration: 0.4s;
     border-radius: 12px;
 }
+#incorrect31{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
 #incorrect31:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect32{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
 }
 #incorrect32:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+#correct3{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
 #correct3:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect33{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
 }
 #incorrect33:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -132,14 +180,38 @@ text-decoration: none;
     transition-duration: 0.4s;
     border-radius: 12px;
 }
+#incorrect41{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
 #incorrect41:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect42{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
 }
 #incorrect42:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+#correct4{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
 #correct4:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect43{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
 }
 #incorrect43:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -152,19 +224,175 @@ text-decoration: none;
     transition-duration: 0.4s;
     border-radius: 12px;
 }
+#incorrect51{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
 #incorrect51:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect52{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
 }
 #incorrect52:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+#correct5{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
 #correct5:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#incorrect53{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
 }
 #incorrect53:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+#nextQuestionOne{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
 
+}
+#nextQuestionTwo{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#nextQuestionThree{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#nextQuestionFour{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#nextQuestionFive{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#nextQuestionSix{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#nextQuestionSeven{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#nextQuestionEight{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#nextQuestionNine{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#finalScore{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#goBackTwo{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#goBackThree{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#goBackFour{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#goBackFive{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#goBackSix{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#goBackSeven{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#goBackEight{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#goBackNine{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
+#goBackTen{
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+
+}
 #flag{
     display: flex;
     flex-wrap: wrap;
