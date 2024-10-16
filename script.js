@@ -40,7 +40,7 @@ var forum1btnjs = $('#forum1btn');
     }
     else {
         forumq1c.toggleClass("incorrect");
-        forumq1c.attr('placeholder','Norway');
+        $('#forumq1c').attr('placeholder','Norway');
         forumq1c.attr("disabled",true);
         forum1btnjs.attr("disabled",true);
     }
