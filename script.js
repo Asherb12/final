@@ -226,6 +226,7 @@ var forum5btnjs = $('#forum5btn');
    
  });
 
+ console.log(score);
 //   Final Function 
 var R0 = $('#zeroOutofTen');
 var R1 = $('#oneOutofTen');
@@ -278,7 +279,7 @@ if (score == 0) {
     
 }
 
-    
+
  
 
 
