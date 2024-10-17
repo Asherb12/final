@@ -228,7 +228,10 @@ var forum5btnjs = $('#forum5btn');
    
  });
 
- console.log(score);
+
+var finalscrn = $('#finalScore');
+finalscrn.on("click",results);
+
 //   Final Function 
 var R0 = $('#zeroOutofTen');
 var R1 = $('#oneOutofTen');
