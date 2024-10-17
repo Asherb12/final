@@ -9,7 +9,7 @@ var totalq = 10;
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
     score++;
-    console.log("Score: " + score);
+    localStorage.setItem('Score',score);
     correctq1.attr("disabled", true);
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 });
@@ -32,6 +32,8 @@ var forum1btnjs = $('#forum1btn');
     console.log(userInput);
     if( userInput == "norway"){
         score++ 
+        localStorage.setItem('Score',score);
+        console.log(localStorage.getItem('Score'));
         console.log("score" + score);
         forumq1c.toggleClass("correct");
         forumq1c.attr("disabled", true);
