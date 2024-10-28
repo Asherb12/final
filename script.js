@@ -2,7 +2,7 @@
 // Question 1 Multiple choice
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
-var score = "";
+var score = 0;
 var totalq = 10;
 
 
@@ -12,7 +12,7 @@ correctq1.on("click", function() {
     score = "1"
     correctq1.attr("disabled", true);
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
-    var score = "1";
+    var score = 1
 localStorage.setItem("tscore", score);
 });
 
@@ -42,7 +42,7 @@ console.log (score)
         forumq1c.toggleClass("correct");
         forumq1c.attr("disabled", true);
         forum1btnjs.attr("disabled",true);
-        score = "2";
+        score = score + 1; 
         localStorage.setItem("tscore", score);
     
        
@@ -68,6 +68,8 @@ correctq2.on("click", function() {
     console.log("Score: " + score);
     $("#correct2").attr("disabled", true);
     $('#incorrect21,#incorrect22,#incorrect23').attr("disabled",true);
+    score = "";
+    localStorage.setItem("tscore", score);
 });
 
 
