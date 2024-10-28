@@ -9,10 +9,9 @@ var totalq = 10;
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
-    score = "1"
+    score = 1
     correctq1.attr("disabled", true);
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
-    var score = 1
 localStorage.setItem("tscore", score);
 });
 
@@ -29,16 +28,12 @@ incorrectq1.on("click", function() {
 var forumq1c = $('#forumq1');
 var forum1btnjs = $('#forum1btn');
 
-var score = localStorage.getItem("tscore");
-console.log (score)
-
+localStorage.getItem("tscore", score);
 
  forum1btnjs.on("click", function(){
     var userInput = forumq1c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "norway"){
-        console.log(localStorage.getItem('Score'));
-        console.log("score" + score);
         forumq1c.toggleClass("correct");
         forumq1c.attr("disabled", true);
         forum1btnjs.attr("disabled",true);
@@ -68,8 +63,7 @@ correctq2.on("click", function() {
     console.log("Score: " + score);
     $("#correct2").attr("disabled", true);
     $('#incorrect21,#incorrect22,#incorrect23').attr("disabled",true);
-    score = "";
-    localStorage.setItem("tscore", score);
+   
 });
 
 
