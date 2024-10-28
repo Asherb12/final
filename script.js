@@ -2,9 +2,11 @@
 // Question 1 Multiple choice
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
-var score = 0;
+var score = "";
 var totalq = 10;
 
+var score = "1";
+localStorage.setItem("tscore", score);
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
@@ -26,6 +28,9 @@ incorrectq1.on("click", function() {
 // Question 2 forums
 var forumq1c = $('#forumq1');
 var forum1btnjs = $('#forum1btn');
+
+var someVarName = localStorage.getItem("tscore");
+console.log("score");
 
  forum1btnjs.on("click", function(){
     var userInput = forumq1c.val().toLowerCase();
@@ -227,6 +232,11 @@ var forum5btnjs = $('#forum5btn');
     }
    
  });
+
+//  var score = "0";
+// localStorage.setItem("tscore", score);
+
+// var someVarName = localStorage.getItem("tscore");
 
 
 var finalscrn = $('#finalScore');
