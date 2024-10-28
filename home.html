@@ -10,7 +10,11 @@
 >>>>>>> Stashed changes
   <title>Trivia</title>
   <link rel="stylesheet" href="style.css" type="text/css" />
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    var score = 0;
+    localStorage.setItem("tscore", score);
+    console.log(score);
+  </script>
   
 </head>
 
