@@ -30,7 +30,7 @@ var forumq1c = $('#forumq1');
 var forum1btnjs = $('#forum1btn');
 
 var someVarName = localStorage.getItem("tscore");
-console.log("score");
+console.log(score);
 
  forum1btnjs.on("click", function(){
     var userInput = forumq1c.val().toLowerCase();
