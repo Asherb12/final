@@ -36,7 +36,7 @@ localStorage.getItem("tscore", score);
         forumq1c.toggleClass("correct");
         forumq1c.attr("disabled", true);
         forum1btnjs.attr("disabled",true);
-        score = `${score}1`
+        score = score + "1"
         localStorage.setItem("tscore", score);
     
        
