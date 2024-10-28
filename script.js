@@ -5,15 +5,15 @@ var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 var score = "";
 var totalq = 10;
 
-var score = "1";
-localStorage.setItem("tscore", score);
+
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
-    score++;
-    localStorage.setItem('Score',score);
+    score = "1"
     correctq1.attr("disabled", true);
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
+    var score = "1";
+localStorage.setItem("tscore", score);
 });
 
 
@@ -29,20 +29,21 @@ incorrectq1.on("click", function() {
 var forumq1c = $('#forumq1');
 var forum1btnjs = $('#forum1btn');
 
-var someVarName = localStorage.getItem("tscore");
-console.log(score);
+var score = localStorage.getItem("tscore");
+console.log (score)
+
 
  forum1btnjs.on("click", function(){
     var userInput = forumq1c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "norway"){
-        score++ 
-        localStorage.setItem('Score',score);
         console.log(localStorage.getItem('Score'));
         console.log("score" + score);
         forumq1c.toggleClass("correct");
         forumq1c.attr("disabled", true);
         forum1btnjs.attr("disabled",true);
+        score = "2";
+        localStorage.setItem("tscore", score);
     
        
     }
@@ -53,6 +54,9 @@ console.log(score);
     }
    
  });
+
+ var score = localStorage.getItem("tscore");
+console.log (score)
 
 // Question 3 multiple choice 
 var correctq2 = $('#correct2');
