@@ -89,6 +89,7 @@ text-decoration: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     font-size: 24px;
     transition-duration: 0.4s;
     border-radius: 12px;
@@ -133,6 +134,7 @@ text-decoration: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     font-size: 24px;
     transition-duration: 0.4s;
     border-radius: 12px;
@@ -177,6 +179,7 @@ text-decoration: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     font-size: 24px;
     transition-duration: 0.4s;
     border-radius: 12px;
@@ -221,6 +224,7 @@ text-decoration: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     font-size: 24px;
     transition-duration: 0.4s;
     border-radius: 12px;
@@ -396,11 +400,15 @@ text-decoration: none;
 
 }
 #flag{
-    display: flex;
-    flex-wrap: wrap;
     width: 250px;
     height: 150px;
 
+}
+#flags{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .nextBack{
     display: flex;
