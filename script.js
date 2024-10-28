@@ -9,7 +9,7 @@ var totalq = 10;
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
-    score = score + 1
+    score++
     correctq1.attr("disabled", true);
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 localStorage.setItem("tscore", score);
@@ -37,7 +37,7 @@ console.log(score);
         forumq1c.toggleClass("correct");
         forumq1c.attr("disabled", true);
         forum1btnjs.attr("disabled",true);
-        score = score + 1
+        score++
         localStorage.setItem("tscore", score);
     
        
@@ -51,9 +51,9 @@ console.log(score);
  });
 
  var score = localStorage.getItem("tscore");
-console.log (score)
 
 // Question 3 multiple choice 
+console.log (score)
 var correctq2 = $('#correct2');
 var incorrectq2 = $('#incorrect21, #incorrect22, #incorrect23');
 
