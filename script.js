@@ -2,14 +2,14 @@
 // Question 1 Multiple choice
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
-var score = 0;
+var score = ""
 var totalq = 10;
 
 
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
-    score = 1
+    score = "1"
     correctq1.attr("disabled", true);
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 localStorage.setItem("tscore", score);
@@ -32,12 +32,11 @@ localStorage.getItem("tscore", score);
 
  forum1btnjs.on("click", function(){
     var userInput = forumq1c.val().toLowerCase();
-    console.log(userInput);
     if( userInput == "norway"){
         forumq1c.toggleClass("correct");
         forumq1c.attr("disabled", true);
         forum1btnjs.attr("disabled",true);
-        score = score + 1; 
+        score = `${score}1`
         localStorage.setItem("tscore", score);
     
        
@@ -50,7 +49,7 @@ localStorage.getItem("tscore", score);
    
  });
 
- var score = localStorage.getItem("tscore");
+ var score = localStorage.getItemItem("tscore");
 console.log (score)
 
 // Question 3 multiple choice 
