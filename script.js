@@ -2,14 +2,14 @@
 // Question 1 Multiple choice
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
-var score = ""
+var score = 0
 var totalq = 10;
 
 
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
-    score = "1"
+    score = score + 1
     correctq1.attr("disabled", true);
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 localStorage.setItem("tscore", score);
@@ -29,6 +29,7 @@ var forumq1c = $('#forumq1');
 var forum1btnjs = $('#forum1btn');
 
 localStorage.getItem("tscore", score);
+console.log(score);
 
  forum1btnjs.on("click", function(){
     var userInput = forumq1c.val().toLowerCase();
@@ -36,7 +37,7 @@ localStorage.getItem("tscore", score);
         forumq1c.toggleClass("correct");
         forumq1c.attr("disabled", true);
         forum1btnjs.attr("disabled",true);
-        score = score + "1"
+        score = score + 1
         localStorage.setItem("tscore", score);
     
        
@@ -49,7 +50,7 @@ localStorage.getItem("tscore", score);
    
  });
 
- var score = localStorage.getItemItem("tscore");
+ var score = localStorage.getItem("tscore");
 console.log (score)
 
 // Question 3 multiple choice 
@@ -58,8 +59,6 @@ var incorrectq2 = $('#incorrect21, #incorrect22, #incorrect23');
 
 correctq2.on("click", function() {
     correctq2.toggleClass("correct"); 
-    score++;
-    console.log("Score: " + score);
     $("#correct2").attr("disabled", true);
     $('#incorrect21,#incorrect22,#incorrect23').attr("disabled",true);
    
