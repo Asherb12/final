@@ -3,7 +3,10 @@
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 var score = 0
-var totalq = 10;
+localStorage.setItem("tscore", score);
+localStorage.getItem("tscore", score)
+console.log(score)
+
 
 
 
