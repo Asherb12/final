@@ -11,7 +11,6 @@ function score(){
       score++;
       localStorage.setItem("tscore", score);
       console.log(score);
-
 }
 
 
@@ -19,15 +18,11 @@ function score(){
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
-    correct1 = "true"
-    score++
     correctq1.attr("disabled", true);
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 
 });
 
-correctq1.on("click", score);
-    
 
 
 incorrectq1.on("click", function() {
@@ -93,8 +88,6 @@ var forum2btnjs = $('#forum2btn');
     var userInput = forumq2c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "clinton"){
-        score++ 
-        console.log("score" + score);
         forumq2c.toggleClass("correct");
         forumq2c.attr("disabled", true);
         forum2btnjs.attr("disabled",true);
@@ -117,8 +110,6 @@ var incorrectq3 = $('#incorrect31, #incorrect32, #incorrect33');
 
 correctq3.on("click", function() {
     correctq3.toggleClass("correct"); 
-    score++;
-    console.log("Score: " + score);
     $("#correct3").attr("disabled", true);
     $('#incorrect31,#incorrect32,#incorrect33').attr("disabled",true);
 });
@@ -139,8 +130,6 @@ var forum3btnjs = $('#forum3btn');
     var userInput = forumq3c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "the last supper"){
-        score++ 
-        console.log("score" + score);
         forumq3c.toggleClass("correct");
         forumq3c.attr("disabled", true);
         forum3btnjs.attr("disabled",true);
@@ -161,8 +150,6 @@ var incorrectq4 = $('#incorrect41, #incorrect42, #incorrect43');
 
 correctq4.on("click", function() {
     correctq4.toggleClass("correct"); 
-    score++;
-    console.log("Score: " + score);
     $("#correct4").attr("disabled", true);
     $('#incorrect41,#incorrect42,#incorrect43').attr("disabled",true);
 });
@@ -184,8 +171,6 @@ var forum4btnjs = $('#forum4btn');
     var userInput = forumq4c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "greece"){
-        score++ 
-        console.log("score" + score);
         forumq4c.toggleClass("correct");
         forumq4c.attr("disabled", true);
         forum4btnjs.attr("disabled",true);
@@ -206,8 +191,6 @@ var incorrectq5 = $('#incorrect51, #incorrect52, #incorrect53');
 
 correctq5.on("click", function() {
     correctq5.toggleClass("correct"); 
-    score++;
-    console.log("Score: " + score);
     $("#correct5").attr("disabled", true);
     $('#incorrect51,#incorrect52,#incorrect53').attr("disabled",true);
 });
@@ -227,8 +210,6 @@ var forum5btnjs = $('#forum5btn');
     var userInput = forumq5c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "cheese"){
-        score++ 
-        console.log("score" + score);
         forumq5c.toggleClass("correct");
         forumq5c.attr("disabled", true);
         forum5btnjs.attr("disabled",true);
@@ -243,10 +224,16 @@ var forum5btnjs = $('#forum5btn');
    
  });
 
-//  var score = "0";
-// localStorage.setItem("tscore", score);
-
-// var someVarName = localStorage.getItem("tscore");
+ correctq1.on("click", score);
+ forum1btnjs.on("click", score);
+ correctq2.on("click", score);
+ forum2btnjs.on("click", score);
+ correctq3.on("click", score);
+ forum3btnjs.on("click", score);
+ correctq4.on("click", score);
+ forum4btnjs.on("click", score);
+ correctq5.on("click", score);
+ forum5btnjs.on("click", score);
 
 
 var finalscrn = $('#finalScore');
