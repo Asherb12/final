@@ -9,6 +9,15 @@ a{
 color: black;
 text-decoration: none;
 }
+#instcon{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#wordscon{
+    display:flex;
+    flex-wrap:wrap;
+}
 #well{
     display: flex;
     flex-wrap:wrap;
