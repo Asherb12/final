@@ -5,25 +5,42 @@ var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 var score = localStorage.setItem("tscore",0);
 
 
-function score1(){
-      score = parseInt(localStorage.getItem("tscore", score));
-      score++
-      console.log(score);
-      localStorage.setItem("tscore", score);
-      
+// function score1(){
+//       score = parseInt(localStorage.getItem("tscore", score));
+//       score++
+//       console.log(score);
+//       localStorage.setItem("tscore", score);}
+
+// Step 1: Initialize 'tscore' in localStorage if it doesn't exist
+if (localStorage.getItem("tscore") === null) {
+    localStorage.setItem("tscore", 0);
 }
 
+/
+function incrementScore() {
 
+    let currentScore = parseInt(localStorage.getItem("tscore")) || 0;
+    currentScore++;
+    console.log("Current Score:", currentScore);
+    localStorage.setItem("tscore", currentScore);
+}
 
-
+// Step 3: Define the button click function
 correctq1.on("click", function() {
+    incrementScore();  
     correctq1.toggleClass("correct"); 
     correctq1.attr("disabled", true);
-    $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
+    $('#incorrect11,#incorrect12,#incorrect13').attr("disabled", true);  
 
 });
 
 
+// correctq1.on("click", function() {
+//     correctq1.toggleClass("correct"); 
+//     correctq1.attr("disabled", true);
+//     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
+
+// });
 
 incorrectq1.on("click", function() {
     $(this).toggleClass("incorrect"); 
@@ -44,7 +61,7 @@ var forum1btnjs = $('#forum1btn');
         forumq1c.toggleClass("correct");
         forumq1c.attr("disabled", true);
         forum1btnjs.attr("disabled",true);
-        
+        incrementScore();  
        
     
        
@@ -224,16 +241,16 @@ var forum5btnjs = $('#forum5btn');
    
  });
 
- correctq1.on("click", score1);
- forum1btnjs.on("click", score1);
- correctq2.on("click", score1);
- forum2btnjs.on("click", score1);
- correctq3.on("click", score1);
- forum3btnjs.on("click", score1);
- correctq4.on("click", score1);
- forum4btnjs.on("click", score1);
- correctq5.on("click", score1);
- forum5btnjs.on("click", score1);
+//  correctq1.on("click", score1);
+//  forum1btnjs.on("click", score1);
+//  correctq2.on("click", score1);
+//  forum2btnjs.on("click", score1);
+//  correctq3.on("click", score1);
+//  forum3btnjs.on("click", score1);
+//  correctq4.on("click", score1);
+//  forum4btnjs.on("click", score1);
+//  correctq5.on("click", score1);
+//  forum5btnjs.on("click", score1);
 
 
  
