@@ -8,9 +8,10 @@ localStorage.setItem("tscore",0);
 
 function score(){
     score = localStorage.getItem("tscore", score);
-      score++;
-      localStorage.setItem("tscore", score);
+      score = score + 1
       console.log(score);
+      localStorage.setItem("tscore", score);
+      
 }
 
 
