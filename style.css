@@ -266,75 +266,22 @@ text-decoration: none;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 /* Boring stuff down here */
-#nextQuestionOne{
+#nextQuestion{
     height: 50px;
     width:100px;
     margin: 15px;
     border-radius: 12px;
-
+    font-size: 14px;
+    background-color: gold;
 }
-#nextQuestionTwo{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
 
-}
-#nextQuestionThree{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-
-}
-#nextQuestionFour{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-
-}
-#nextQuestionFive{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-
-}
-#nextQuestionSix{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-
-}
-#nextQuestionSeven{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-
-}
-#nextQuestionEight{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-
-}
-#nextQuestionNine{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-
-}
 #finalScore{
     height: 50px;
     width:100px;
     margin: 15px;
     border-radius: 12px;
-
+    font-size: 14px;
+    background-color: gold;
 }
 #flag{
     width: 250px;
@@ -355,6 +302,32 @@ text-decoration: none;
     font-size: 24px;
     
 
+}
+#textBox{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+#forumq1[type=text]:focus {
+    outline: none;
+    border: 3px solid #555;
+  }
+#forumq2[type=text]:focus {
+    outline: none;
+    border: 3px solid #555;
+  }
+#forumq3[type=text]:focus {
+    outline: none;
+    border: 3px solid #555;
+}
+#forumq4[type=text]:focus {
+    outline: none;
+    border: 3px solid #555;
+}
+#forumq5[type=text]:focus {
+    outline: none;
+    border: 3px solid #555;
 }
 .correct{
 background-color:green;
