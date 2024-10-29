@@ -419,6 +419,32 @@ text-decoration: none;
     
 
 }
+#textBox{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+#forumq1[type=text]:focus {
+    outline: none;
+    border: 3px solid #555;
+  }
+#forumq2[type=text]:focus {
+    outline: none;
+    border: 3px solid #555;
+  }
+#forumq3[type=text]:focus {
+    outline: none;
+    border: 3px solid #555;
+}
+#forumq4[type=text]:focus {
+    outline: none;
+    border: 3px solid #555;
+}
+#forumq5[type=text]:focus {
+    outline: none;
+    border: 3px solid #555;
+}
 .correct{
 background-color:green;
 color: white;
