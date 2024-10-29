@@ -16,7 +16,7 @@ if (localStorage.getItem("tscore") === null) {
     localStorage.setItem("tscore", 0);
 }
 
-/
+
 function incrementScore() {
 
     let currentScore = parseInt(localStorage.getItem("tscore")) || 0;
