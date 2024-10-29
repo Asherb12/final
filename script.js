@@ -3,20 +3,31 @@
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 var correct1 = ""
+localStorage.setItem("tscore",0);
 
+
+function score(){
+    score = localStorage.getItem("tscore", score);
+      score++;
+      localStorage.setItem("tscore", score);
+      console.log(score);
+
+}
 
 
 
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
-    var correct1 = "true"
+    correct1 = "true"
     score++
     correctq1.attr("disabled", true);
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
 
 });
 
+correctq1.on("click", score);
+    
 
 
 incorrectq1.on("click", function() {
