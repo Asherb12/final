@@ -2,11 +2,10 @@
 // Question 1 Multiple choice
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
-var correct1 = ""
-let score = localStorage.setItem("tscore",0);
+var score = localStorage.setItem("tscore",0);
 
 
-function score(){
+function score1(){
       score = parseInt(localStorage.getItem("tscore", score));
       score++
       console.log(score);
@@ -225,72 +224,23 @@ var forum5btnjs = $('#forum5btn');
    
  });
 
- correctq1.on("click", score);
- forum1btnjs.on("click", score);
- correctq2.on("click", score);
- forum2btnjs.on("click", score);
- correctq3.on("click", score);
- forum3btnjs.on("click", score);
- correctq4.on("click", score);
- forum4btnjs.on("click", score);
- correctq5.on("click", score);
- forum5btnjs.on("click", score);
+ correctq1.on("click", score1);
+ forum1btnjs.on("click", score1);
+ correctq2.on("click", score1);
+ forum2btnjs.on("click", score1);
+ correctq3.on("click", score1);
+ forum3btnjs.on("click", score1);
+ correctq4.on("click", score1);
+ forum4btnjs.on("click", score1);
+ correctq5.on("click", score1);
+ forum5btnjs.on("click", score1);
 
 
-var finalscrn = $('#finalScore');
-finalscrn.on("click",results);
+ 
 
-//   Final Function 
-var R0 = $('#zeroOutofTen');
-var R1 = $('#oneOutofTen');
-var R2 = $('#twoOutofTen');
-var R3 = $('#threeOutofTen');
-var R4 = $('#fourOutofTen');
-var R5 = $('#fiveOutofTen');
-var R6 = $('#sixOutofTen');
-var R7 = $('#sevenOutofTen');
-var R8 = $('#eightOutofTen');
-var R9 = $('#nineOutofTen');
-var R10 = $('#tenOutofTen');
 
-function results(){
-    R0.style.display = 'none';
-    R1.style.display = 'none';
-    R2.style.display = 'none';
-    R3.style.display = 'none';
-    R4.style.display = 'none';
-    R5.style.display = 'none';
-    R6.style.display = 'none';
-    R7.style.display = 'none';
-    R8.style.display = 'none';
-    R9.style.display = 'none';
-    R10.style.display = 'none';
 
-if (score == 0) {
-        R0.style.display = 'inline-block';
-    } else if (score == 1) {
-        R1.style.display = 'inline-block';
-    } else if (score == 2) {
-        R2.style.display = 'inline-block';
-    } else if (score == 3) {
-        R3.style.display = 'inline-block';
-    } else if (score == 4) {
-        R4.style.display = 'inline-block';
-    } else if (score == 5) {
-        R5.style.display = 'inline-block';
-    } else if (score == 6) {
-        R6.style.display = 'inline-block';
-    } else if (score == 7) {
-        R7.style.display = 'inline-block';
-    } else if (score == 8) {
-        R8.style.display = 'inline-block';
-    } else if (score == 9) {
-        R9.style.display = 'inline-block';
-    } else {
-        R10.style.display = 'inline-block';
-    }
-    
-}
+
 
 
  
