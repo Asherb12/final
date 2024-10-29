@@ -10,7 +10,7 @@ var correct1 = ""
 
 correctq1.on("click", function() {
     correctq1.toggleClass("correct"); 
-    var correct1 = "true"
+    correct1 = "true"
     score++
     correctq1.attr("disabled", true);
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
