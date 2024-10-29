@@ -7,7 +7,7 @@ localStorage.setItem("tscore",0);
 
 
 function score(){
-      score = parseInt(localStorage.getItem("tscore", score));
+     let score = parseInt(localStorage.getItem("tscore", score));
       score++
       console.log(score);
       localStorage.setItem("tscore", score);
