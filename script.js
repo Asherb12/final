@@ -3,11 +3,11 @@
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 var correct1 = ""
-localStorage.setItem("tscore",0);
+let score = localStorage.setItem("tscore",0);
 
 
 function score(){
-     let score = parseInt(localStorage.getItem("tscore", score));
+      score = parseInt(localStorage.getItem("tscore", score));
       score++
       console.log(score);
       localStorage.setItem("tscore", score);
