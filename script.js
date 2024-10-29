@@ -3,6 +3,7 @@
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 var correct1 = ""
+var score = 0
 
 
 
