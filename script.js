@@ -5,7 +5,7 @@ var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 var score = localStorage.setItem("tscore",0);
 
 
-function score(){
+function score1(){
       score = parseInt(localStorage.getItem("tscore", score));
       score++
       console.log(score);
@@ -224,16 +224,16 @@ var forum5btnjs = $('#forum5btn');
    
  });
 
- correctq1.on("click", score);
- forum1btnjs.on("click", score);
- correctq2.on("click", score);
- forum2btnjs.on("click", score);
- correctq3.on("click", score);
- forum3btnjs.on("click", score);
- correctq4.on("click", score);
- forum4btnjs.on("click", score);
- correctq5.on("click", score);
- forum5btnjs.on("click", score);
+ correctq1.on("click", score1);
+ forum1btnjs.on("click", score1);
+ correctq2.on("click", score1);
+ forum2btnjs.on("click", score1);
+ correctq3.on("click", score1);
+ forum3btnjs.on("click", score1);
+ correctq4.on("click", score1);
+ forum4btnjs.on("click", score1);
+ correctq5.on("click", score1);
+ forum5btnjs.on("click", score1);
 
 
  
