@@ -6,6 +6,14 @@ var correct1 = ""
 var score = 0
 
 
+function score(){
+    score = localStorage.getItem("tscore", score);
+      score++;
+      localStorage.setItem("tscore", score);
+      console.log(score);
+
+}
+
 
 
 
@@ -18,6 +26,8 @@ correctq1.on("click", function() {
 
 });
 
+correctq1.on("click", score);
+    
 
 
 incorrectq1.on("click", function() {
