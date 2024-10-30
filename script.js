@@ -2,9 +2,16 @@
 // Question 1 Multiple choice
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
-var score = localStorage.setItem("tscore",currentScore);
 
+var scorebtn = $('start');
 
+scorebtn.on("click", scoreset)
+
+function scoreset(){ 
+var score = 0;
+localStorage.setItem("tscore", score);
+
+}
 // function score1(){
 //       score = parseInt(localStorage.getItem("tscore", score));
 //       score++
