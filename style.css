@@ -5,6 +5,27 @@ html{
     border-radius: 5px;
 }
 
+.home{
+    
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+#homeBtn{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    height: 50px;
+    width:100px;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+#homeBtn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 a{
 color: black;
 text-decoration: none;

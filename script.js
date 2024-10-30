@@ -4,34 +4,25 @@ var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 
 
-// function clear (){
 
-// localStorage.removeItem("tscore")
+function clear(){
+localStorage.clear("tscore");
+}
 
-// function score1(){
-//       score = parseInt(localStorage.getItem("tscore", score));
-//       score++
-//       console.log(score);
-//       localStorage.setItem("tscore", score);}
-
-// if (localStorage.getItem("tscore") === null) {
-//     localStorage.setItem("tscore");
-// }
-
-
-if (localStorage.getItem("tscore") === null) {
+if (localStorage.getItem("tscore") == null) {
     localStorage.setItem("tscore", 0);
 }
 
 
 function incrementScore() {
-    let currentScore = parseInt(localStorage.getItem("tscore"));
+    var currentScore = parseInt(localStorage.getItem("tscore")) || 0;
     currentScore++;
     localStorage.setItem("tscore", currentScore);
     console.log(currentScore);
 }
 
 correctq1.on("click", function() {
+    clear();
     incrementScore();  
     correctq1.toggleClass("correct"); 
     correctq1.attr("disabled", true);
@@ -63,10 +54,12 @@ var forum1btnjs = $('#forum1btn');
  forum1btnjs.on("click", function(){
     var userInput = forumq1c.val().toLowerCase();
     if( userInput == "norway"){
+        incrementScore();  
         forumq1c.toggleClass("correct");
         forumq1c.attr("disabled", true);
         forum1btnjs.attr("disabled",true);
-        incrementScore();  
+     
+       
        
     
        
@@ -82,11 +75,12 @@ var forum1btnjs = $('#forum1btn');
 
 
 // Question 3 multiple choice 
-console.log (score)
+
 var correctq2 = $('#correct2');
 var incorrectq2 = $('#incorrect21, #incorrect22, #incorrect23');
 
 correctq2.on("click", function() {
+    incrementScore();
     correctq2.toggleClass("correct"); 
     $("#correct2").attr("disabled", true);
     $('#incorrect21,#incorrect22,#incorrect23').attr("disabled",true);
@@ -110,6 +104,7 @@ var forum2btnjs = $('#forum2btn');
     var userInput = forumq2c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "clinton"){
+        incrementScore();
         forumq2c.toggleClass("correct");
         forumq2c.attr("disabled", true);
         forum2btnjs.attr("disabled",true);
@@ -131,6 +126,7 @@ var correctq3 = $('#correct3');
 var incorrectq3 = $('#incorrect31, #incorrect32, #incorrect33');
 
 correctq3.on("click", function() {
+    incrementScore();
     correctq3.toggleClass("correct"); 
     $("#correct3").attr("disabled", true);
     $('#incorrect31,#incorrect32,#incorrect33').attr("disabled",true);
@@ -152,6 +148,7 @@ var forum3btnjs = $('#forum3btn');
     var userInput = forumq3c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "the last supper"){
+        incrementScore();
         forumq3c.toggleClass("correct");
         forumq3c.attr("disabled", true);
         forum3btnjs.attr("disabled",true);
@@ -171,6 +168,7 @@ var correctq4 = $('#correct4');
 var incorrectq4 = $('#incorrect41, #incorrect42, #incorrect43');
 
 correctq4.on("click", function() {
+    incrementScore();
     correctq4.toggleClass("correct"); 
     $("#correct4").attr("disabled", true);
     $('#incorrect41,#incorrect42,#incorrect43').attr("disabled",true);
@@ -193,6 +191,7 @@ var forum4btnjs = $('#forum4btn');
     var userInput = forumq4c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "greece"){
+        incrementScore();
         forumq4c.toggleClass("correct");
         forumq4c.attr("disabled", true);
         forum4btnjs.attr("disabled",true);
@@ -212,6 +211,7 @@ var correctq5 = $('#correct5');
 var incorrectq5 = $('#incorrect51, #incorrect52, #incorrect53');
 
 correctq5.on("click", function() {
+    incrementScore();
     correctq5.toggleClass("correct"); 
     $("#correct5").attr("disabled", true);
     $('#incorrect51,#incorrect52,#incorrect53').attr("disabled",true);
@@ -232,6 +232,7 @@ var forum5btnjs = $('#forum5btn');
     var userInput = forumq5c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "cheese"){
+        incrementScore();
         forumq5c.toggleClass("correct");
         forumq5c.attr("disabled", true);
         forum5btnjs.attr("disabled",true);
