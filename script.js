@@ -1,25 +1,29 @@
 
-// Question 1 Multiple choice
-var correctq1 = $('#correct1');
-var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 
 
 
+//  function to clear teh local data storage to avoid repeating users score getting messed up 
 function clear(){
 localStorage.clear("tscore");
 }
-
+// decleares "tscore" and sets it to zero but uses a condtional to avoid reapeated resets to "tscore"
 if (localStorage.getItem("tscore") == null) {
     localStorage.setItem("tscore", 0);
 }
 
-
+// function to increase score when userinput is correct
 function incrementScore() {
     var currentScore = parseInt(localStorage.getItem("tscore")) || 0;
     currentScore++;
     localStorage.setItem("tscore", currentScore);
     console.log(currentScore);
 }
+
+//  Question 1 multiple choice
+
+var correctq1 = $('#correct1');
+var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
+
 
 correctq1.on("click", function() {
     clear();
@@ -31,12 +35,6 @@ correctq1.on("click", function() {
 });
 
 
-// correctq1.on("click", function() {
-//     correctq1.toggleClass("correct"); 
-//     correctq1.attr("disabled", true);
-//     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled",true);
-
-// });
 
 incorrectq1.on("click", function() {
     $(this).toggleClass("incorrect"); 
@@ -248,8 +246,6 @@ var forum5btnjs = $('#forum5btn');
  });
 
 
-
-// Assuming you already have the following code in your existing script
 
 // Define all the score messages
 var zeroOutOfTen = $('#zeroOutOfTen');
