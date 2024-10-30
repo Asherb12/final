@@ -247,25 +247,74 @@ var forum5btnjs = $('#forum5btn');
    
  });
 
-//  correctq1.on("click", score1);
-//  forum1btnjs.on("click", score1);
-//  correctq2.on("click", score1);
-//  forum2btnjs.on("click", score1);
-//  correctq3.on("click", score1);
-//  forum3btnjs.on("click", score1);
-//  correctq4.on("click", score1);
-//  forum4btnjs.on("click", score1);
-//  correctq5.on("click", score1);
-//  forum5btnjs.on("click", score1);
 
 
- 
+// Assuming you already have the following code in your existing script
 
+// Define all the score messages
+var zeroOutOfTen = $('#zeroOutOfTen');
+var oneOutOfTen = $('#oneOutOfTen');
+var twoOutOfTen = $('#twoOutOfTen');
+var threeOutOfTen = $('#threeOutOfTen');
+var fourOutOfTen = $('#fourOutOfTen');
+var fiveOutOfTen = $('#fiveOutOfTen');
+var sixOutOfTen = $('#sixOutOfTen');
+var sevenOutOfTen = $('#sevenOutOfTen');
+var eightOutOfTen = $('#eightOutOfTen');
+var nineOutOfTen = $('#nineOutOfTen');
+var tenOutOfTen = $('#tenOutOfTen');
 
+// Function to initialize score messages
+function initializeScoreMessages() {
+    // Disable all score messages
+    zeroOutOfTen.hide();
+    oneOutOfTen.hide();
+    twoOutOfTen.hide();
+    threeOutOfTen.hide();
+    fourOutOfTen.hide();
+    fiveOutOfTen.hide();
+    sixOutOfTen.hide();
+    sevenOutOfTen.hide();
+    eightOutOfTen.hide();
+    nineOutOfTen.hide();
+    tenOutOfTen.hide();
+}
 
+// Function to display the correct score message based on the score
+function displayScoreMessage() {
+    // Get the score from localStorage
+    var score = parseInt(localStorage.getItem("tscore")) || 0;
 
+    // Display the corresponding score message
+    if (score === 0) {
+        zeroOutOfTen.show();
+    } else if (score === 1) {
+        oneOutOfTen.show();
+    } else if (score === 2) {
+        twoOutOfTen.show();
+    } else if (score === 3) {
+        threeOutOfTen.show();
+    } else if (score === 4) {
+        fourOutOfTen.show();
+    } else if (score === 5) {
+        fiveOutOfTen.show();
+    } else if (score === 6) {
+        sixOutOfTen.show();
+    } else if (score === 7) {
+        sevenOutOfTen.show();
+    } else if (score === 8) {
+        eightOutOfTen.show();
+    } else if (score === 9) {
+        nineOutOfTen.show();
+    } else if (score === 10) {
+        tenOutOfTen.show();
+    } else {
+        console.error("Score out of range");
+    }
+}
 
-
- 
-
-
+// Initialize score messages when the document is ready
+$(document).ready(function() {
+    initializeScoreMessages();
+    displayScoreMessage();
+});
