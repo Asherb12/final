@@ -2,7 +2,7 @@
 // Question 1 Multiple choice
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
-var score = localStorage.setItem("tscore",0);
+var score = localStorage.setItem("tscore");
 
 
 // function score1(){
@@ -11,7 +11,6 @@ var score = localStorage.setItem("tscore",0);
 //       console.log(score);
 //       localStorage.setItem("tscore", score);}
 
-// Step 1: Initialize 'tscore' in localStorage if it doesn't exist
 if (localStorage.getItem("tscore") === null) {
     localStorage.setItem("tscore", 0);
 }
@@ -25,7 +24,6 @@ function incrementScore() {
     localStorage.setItem("tscore", currentScore);
 }
 
-// Step 3: Define the button click function
 correctq1.on("click", function() {
     incrementScore();  
     correctq1.toggleClass("correct"); 
