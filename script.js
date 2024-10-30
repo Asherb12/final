@@ -3,8 +3,7 @@
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
 let score = 0
-localStorage.setItem("tscore", score);
-console.log(score)
+
 
 
 // function score1(){
@@ -18,10 +17,14 @@ console.log(score)
 // }
 
 
+if (localStorage.getItem("tscore") === null) {
+    localStorage.setItem("tscore", 0);
+}
+
+
 function incrementScore() {
-    let currentScore = parseInt(localStorage.getItem("tscore",score));
+    let currentScore = parseInt(localStorage.getItem("tscore"));
     currentScore++;
-    console.log("Current Score:", currentScore);
     localStorage.setItem("tscore", currentScore);
 }
 
