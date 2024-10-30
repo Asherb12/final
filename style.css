@@ -25,10 +25,13 @@ text-decoration: none;
 }
 
 #task{
+    width: 800px;
     display: flex;
     flex-wrap:wrap;
-    justify-content:center;
-    z-index: 2; 
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 25px;
 }
 
 #start{
@@ -44,6 +47,36 @@ text-decoration: none;
     padding: 50px;
     
 }
+
+#inst{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#words1{
+    width: 200px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#words2{
+    width: 800px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
 .startb{
     display: flex;
     flex-direction: row;
