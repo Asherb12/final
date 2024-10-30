@@ -26,7 +26,7 @@ function incrementScore() {
     let currentScore = parseInt(localStorage.getItem("tscore"));
     currentScore++;
     localStorage.setItem("tscore", currentScore);
-    console.log(score);
+    console.log(currentScore);
 }
 
 correctq1.on("click", function() {
