@@ -342,6 +342,7 @@ text-decoration: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 25px;
 }
 .next{
     display: flex;
@@ -349,8 +350,6 @@ text-decoration: none;
     flex-wrap: wrap;
     justify-content: flex-start;
     font-size: 24px;
-    
-
 }
 #textBox{
     display:flex;
