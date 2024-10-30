@@ -24,6 +24,13 @@ text-decoration: none;
     justify-content:center;
 }
 
+#task{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    z-index: 2; 
+}
+
 #start{
     top: 250px;
     left: 400px;
