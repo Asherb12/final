@@ -358,24 +358,56 @@ text-decoration: none;
     flex-wrap:wrap;
     justify-content: center;
 }
+#forumq1[type=text]{
+    border: 3px solid #929090;
+    outline: none;
+    transition: 0.5;
+    -webkit-transition: 0.5s;
+    /* Got webkit tansition from w3schools to make the inputs look better when they are selected */
+}
 #forumq1[type=text]:focus {
-    outline: none;
     border: 3px solid #555;
-  }
+}
+#forumq2[type=text]{
+    border: 3px solid #929090;
+    outline: none;
+    transition: 0.5;
+    -webkit-transition: 0.5s;
+}
 #forumq2[type=text]:focus {
-    outline: none;
     border: 3px solid #555;
-  }
+}
+#forumq3[type=text]{
+    margin: 5px;
+    border: 3px solid #929090;
+    outline: none;
+    transition: 0.5;
+    -webkit-transition: 0.5s;
+}
 #forumq3[type=text]:focus {
-    outline: none;
     border: 3px solid #555;
+}
+#forum3btn{
+    margin: 5px;
+    margin-left:0%;
+
+}
+#forumq4[type=text]{
+    border: 3px solid #929090;
+    outline: none;
+    transition: 0.5;
+    -webkit-transition: 0.5s;
 }
 #forumq4[type=text]:focus {
-    outline: none;
     border: 3px solid #555;
 }
-#forumq5[type=text]:focus {
+#forumq5[type=text]{
+    border: 3px solid #929090;
     outline: none;
+    transition: 0.5;
+    -webkit-transition: 0.5s;
+}
+#forumq5[type=text]:focus {
     border: 3px solid #555;
 }
 .correct{
