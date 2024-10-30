@@ -343,7 +343,7 @@ text-decoration: none;
     flex-wrap: wrap;
     justify-content: center;
 }
-.nextBack{
+.next{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -358,6 +358,7 @@ text-decoration: none;
     flex-wrap:wrap;
     justify-content: center;
 }
+
 #forumq1[type=text]{
     border: 3px solid #929090;
     outline: none;
