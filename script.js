@@ -2,10 +2,12 @@
 // Question 1 Multiple choice
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
-let score = 0
 
 
+function clear (){
 
+localStorage.removeItem("tscore")
+}
 // function score1(){
 //       score = parseInt(localStorage.getItem("tscore", score));
 //       score++
@@ -30,6 +32,7 @@ function incrementScore() {
 }
 
 correctq1.on("click", function() {
+    clear();
     incrementScore();  
     correctq1.toggleClass("correct"); 
     correctq1.attr("disabled", true);
