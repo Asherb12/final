@@ -2,7 +2,7 @@
 // Question 1 Multiple choice
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
-
+var score = localStorage.setItem("tscore",currentScore);
 
 
 // function score1(){
@@ -24,7 +24,6 @@ function incrementScore() {
 }
 
 correctq1.on("click", function() {
-    var score = localStorage.setItem("tscore",0);
     incrementScore();  
     correctq1.toggleClass("correct"); 
     correctq1.attr("disabled", true);
