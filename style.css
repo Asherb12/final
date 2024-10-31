@@ -124,7 +124,10 @@ button.incorrect {
     border: 2px solid black;
     transition: background-color 0.3s;
 }
+.incorrect{
+background-color: red;
 
+}
 input[type="text"] {
     font-size: 20px;
     height: 100px;
@@ -143,9 +146,14 @@ input[type="text"].correct {
     font-size: 48px;
     font-weight: bold;
 }
+#endbut{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
 
+}
 .restart-button {
-    position: absolute;
+    font-size: 30px;
     bottom: 100px;
     right: 100px;
     padding: 10px 20px;
@@ -156,18 +164,69 @@ input[type="text"].correct {
 }
 
 #start {
-    width: 400px;
-    height: 200px;
-    padding-top: 250px;
-    padding-left: 400px;
+    width: 800px;
+    height: 250px;
     font-size: 100px;
     color: white;
     background-color: red;
     border: 5px solid black;
     border-radius: 25px;
     padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
 #start:hover {
     box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.24), 0 42px 125px 0 rgba(0, 0, 0, 0.19);
+}
+
+.startb {
+display:flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
+h1{
+color:white;
+font-size: 30px;
+
+}
+#div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#task{
+    color:white;
+    font-size: 24px;
+}
+
+#task1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#words1{
+padding-left: 300px;
+color: white;
+font-size: 30px;
+
+
+}
+
+
+ul{
+color: white;
+padding-left: 250px;
+font-size: 20px;
+
+}
+#inst{
+    font-size: 35px;
 }
