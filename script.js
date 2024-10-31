@@ -245,32 +245,32 @@ var forum5btnjs = $('#forum5btn');
 
 
 // Define all the score messages
-var zeroOutOfTen = $('#zeroOutOfTen');
-var oneOutOfTen = $('#oneOutOfTen');
-var twoOutOfTen = $('#twoOutOfTen');
-var threeOutOfTen = $('#threeOutOfTen');
-var fourOutOfTen = $('#fourOutOfTen');
-var fiveOutOfTen = $('#fiveOutOfTen');
-var sixOutOfTen = $('#sixOutOfTen');
-var sevenOutOfTen = $('#sevenOutOfTen');
-var eightOutOfTen = $('#eightOutOfTen');
-var nineOutOfTen = $('#nineOutOfTen');
-var tenOutOfTen = $('#tenOutOfTen');
+var zeroOutOfTen1 = $('#zeroOutOfTen');
+var oneOutOfTen1 = $('#oneOutOfTen');
+var twoOutOfTen1 = $('#twoOutOfTen');
+var threeOutOfTen1 = $('#threeOutOfTen');
+var fourOutOfTen1 = $('#fourOutOfTen');
+var fiveOutOfTen1 = $('#fiveOutOfTen');
+var sixOutOfTen1 = $('#sixOutOfTen');
+var sevenOutOfTen1 = $('#sevenOutOfTen');
+var eightOutOfTen1 = $('#eightOutOfTen');
+var nineOutOfTen1 = $('#nineOutOfTen');
+var tenOutOfTen1 = $('#tenOutOfTen');
 
 // Function to initialize score messages
 function initializeScoreMessages() {
     // Disable all score messages
-    zeroOutOfTen.hide();
-    oneOutOfTen.hide();
-    twoOutOfTen.hide();
-    threeOutOfTen.hide();
-    fourOutOfTen.hide();
-    fiveOutOfTen.hide();
-    sixOutOfTen.hide();
-    sevenOutOfTen.hide();
-    eightOutOfTen.hide();
-    nineOutOfTen.hide();
-    tenOutOfTen.hide();
+    zeroOutOfTen1.hide();
+    oneOutOfTen1.hide();
+    twoOutOfTen1.hide();
+    threeOutOfTen1.hide();
+    fourOutOfTen1.hide();
+    fiveOutOfTen1.hide();
+    sixOutOfTen1.hide();
+    sevenOutOfTen1.hide();
+    eightOutOfTen1.hide();
+    nineOutOfTen1.hide();
+    tenOutOfTen1.hide();
 }
 
 // Function to display the correct score message based on the score
@@ -280,27 +280,27 @@ function displayScoreMessage() {
 
     // Display the corresponding score message
     if (score === 0) {
-        zeroOutOfTen.show();
+        zeroOutOfTen1.show();
     } else if (score === 1) {
-        oneOutOfTen.show();
+        oneOutOfTen1.show();
     } else if (score === 2) {
-        twoOutOfTen.show();
+        twoOutOfTen1.show();
     } else if (score === 3) {
-        threeOutOfTen.show();
+        threeOutOfTen1.show();
     } else if (score === 4) {
-        fourOutOfTen.show();
+        fourOutOfTen1.show();
     } else if (score === 5) {
-        fiveOutOfTen.show();
+        fiveOutOfTen1.show();
     } else if (score === 6) {
-        sixOutOfTen.show();
+        sixOutOfTen1.show();
     } else if (score === 7) {
-        sevenOutOfTen.show();
+        sevenOutOfTen1.show();
     } else if (score === 8) {
-        eightOutOfTen.show();
+        eightOutOfTen1.show();
     } else if (score === 9) {
-        nineOutOfTen.show();
+        nineOutOfTen1.show();
     } else if (score === 10) {
-        tenOutOfTen.show();
+        tenOutOfTen1.show();
     } else {
         console.error("Score out of range");
     }
@@ -313,4 +313,4 @@ $(document).ready(function() {
 });
 var results = $('#finalscore');
 
-results.text(currentScore);
+$('#finalscore').text(currentScore);
