@@ -311,3 +311,6 @@ $(document).ready(function() {
     initializeScoreMessages();
     displayScoreMessage();
 });
+var results = $('#finalscore');
+
+results.text(currentScore);

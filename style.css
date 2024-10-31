@@ -7,6 +7,13 @@ html{
     width:100%
 }
 
+#finalscore{
+display:flex;
+flex-direction: row;
+justify-content: center;
+color: beige;
+
+}
 .next{
     display: flex;
     flex-direction: row;
@@ -15,7 +22,7 @@ html{
     font-size: 24px;
 }
 
-#zeroOutOfTen, #oneOutofTen, #twoOutofTen, #threeOutofTen, #fourOutofTen, #fiveOutofTen, #sixOutofTen, #sevenOutofTen, #eightOutofTen, #nineOutoften , #tenOutofTen{
+#zeroOutOfTen, #oneOutofTen, #twoOutofTen, #threeOutofTen, #fourOutofTen, #fiveOutofTen, #sixOutofTen, #sevenOutofTen, #eightOutofTen, #nineOutoften, #tenOutofTen{
 color: beige;
 display: flex;
 flex-direction: row;
