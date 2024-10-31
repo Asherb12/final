@@ -38,6 +38,8 @@ html {
 
 #homeBtn {
     text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 50px;
     margin: 15px;
@@ -251,4 +253,8 @@ color: white;
     align-items: center;
     margin: auto;
     border: 3px solid #555;
+}
+button img{
+width: 40px;
+height: 40px;
 }
