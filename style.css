@@ -366,12 +366,11 @@ text-decoration: none;
     font-size: 14px;
     background-color: gold;
 }
-#flag{
+#pics{
     width: 250px;
     height: 150px;
-
 }
-#flags{
+#pictures{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
