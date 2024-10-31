@@ -1,7 +1,4 @@
 
-
-
-
 //  function to clear teh local data storage to avoid repeating users score getting messed up 
 function clear(){
 localStorage.clear("tscore");
@@ -314,3 +311,6 @@ $(document).ready(function() {
     initializeScoreMessages();
     displayScoreMessage();
 });
+var results = $('#finalscore');
+
+results.text(currentScore);
