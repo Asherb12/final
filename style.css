@@ -17,6 +17,9 @@ html{
 
 #zeroOutOfTen, #oneOutofTen, #twoOutofTen, #threeOutofTen, #fourOutofTen, #fiveOutofTen, #sixOutofTen, #sevenOutofTen, #eightOutofTen, #nineOutoften , #tenOutofTen{
 color: beige;
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
 .home{
