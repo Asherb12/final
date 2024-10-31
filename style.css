@@ -1,130 +1,124 @@
 /* Fill up the pages */
-html{
-    background-color:darkolivegreen;
-    border:10px solid gold;
+html {
+    background-color: darkolivegreen;
+    border: 10px solid gold;
     border-radius: 5px;
     height: 100%;
-    width:100%
+    width: 100%;
 }
 
-#finalscore{
-display:flex;
-flex-direction: row;
-justify-content: center;
-color: beige;
-
+#finalscore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: beige;
 }
-.next{
+
+.next {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     font-size: 24px;
 }
 
-#zeroOutOfTen, #oneOutofTen, #twoOutofTen, #threeOutofTen, #fourOutofTen, #fiveOutofTen, #sixOutofTen, #sevenOutofTen, #eightOutofTen, #nineOutoften, #tenOutofTen{
-color: beige;
-display: flex;
-flex-direction: row;
-justify-content: center;
-}
-
-.home{
-    
-    display:flex;
+#zeroOutOfTen, #oneOutofTen, #twoOutofTen, #threeOutofTen, #fourOutofTen, #fiveOutofTen, #sixOutofTen, #sevenOutofTen, #eightOutofTen, #nineOutOfTen, #tenOutofTen {
+    color: beige;
+    display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
-    justify-content:center;
-    
+    justify-content: center;
 }
 
-#homeBtn{
+.home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#homeBtn {
     text-align: center;
     width: 100px;
     height: 50px;
-    height: 50px;
-    width:100px;
     margin: 15px;
     border-radius: 12px;
 }
 
-#homeBtn:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+#homeBtn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-a{
-color: black;
-text-decoration: none;
+a {
+    color: black;
+    text-decoration: none;
 }
-#instcon{
-    display:flex;
+
+#instcon {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-#wordscon{
-    display:flex;
-    flex-wrap:wrap;
-}
-#well{
+
+#wordscon {
     display: flex;
-    flex-wrap:wrap;
-    justify-content:center;
+    flex-wrap: wrap;
 }
 
-#task{
+#well {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#task {
     width: 800px;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     margin: auto;
     margin-bottom: 25px;
 }
 
-#start{
+#start {
     top: 250px;
     left: 400px;
     font-size: 100px;
     color: white;
     background-color: red;
-    border: 5px;
-    border-style: solid;
-    border-color: black;
+    border: 5px solid black;
     border-radius: 25px;
     padding: 50px;
-    
 }
 
-#inst{
+#start:hover {
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.24), 0 42px 125px 0 rgba(0, 0, 0, 0.19);
+}
+
+#inst {
     width: 100%;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     margin-bottom: 25px;
 }
 
-#words1{
-    width: 200px;
+#words1, #words2 {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     margin: auto;
     margin-bottom: 5px;
 }
 
-#words2{
+#words2 {
     width: 800px;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
     margin-bottom: 25px;
 }
 
-.startb{
+.startb {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -133,270 +127,53 @@ text-decoration: none;
     margin: auto;
 }
 
-.questionOne{
+.questionOne, .questionThree, .questionFive, .questionSeven, .questionNine {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 24px;
     transition-duration: 0.4s;
+    border-radius: 12px;
 }
 
-#start:hover{
-    box-shadow: 0 30px 40px 0 rgba(0,0,0,0.24), 0 42px 125px 0 rgba(0,0,0,0.19);
-}
-#incorrect11{
+#incorrect11, #incorrect12, #correct1, #incorrect13, #incorrect21, #correct2, #incorrect22, #incorrect23, #incorrect31, #incorrect32, #correct3, #incorrect33, #incorrect41, #incorrect42, #correct4, #incorrect43, #incorrect51, #incorrect52, #correct5, #incorrect53, #nextQuestion, #finalScore {
     height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect11:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#incorrect12{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect12:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#correct1{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#correct1:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#incorrect13{
-    height: 50px;
-    width:100px;
+    width: 100px;
     margin: 15px;
     border-radius: 12px;
 }
 
-#incorrect13:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.questionThree{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 24px;
-    transition-duration: 0.4s;
-    border-radius: 12px;
-}
-#incorrect21{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect21:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#correct2{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#correct2:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#incorrect22{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect22:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#incorrect23{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect23:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.questionFive{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 24px;
-    transition-duration: 0.4s;
-    border-radius: 12px;
-}
-#incorrect31{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect31:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#incorrect32{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect32:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#correct3{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#correct3:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#incorrect33{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect33:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.questionSeven{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 24px;
-    transition-duration: 0.4s;
-    border-radius: 12px;
-}
-#incorrect41{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect41:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#incorrect42{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect42:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#correct4{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#correct4:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#incorrect43{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect43:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.questionNine{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 24px;
-    transition-duration: 0.4s;
-    border-radius: 12px;
-}
-#incorrect51{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect51:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#incorrect52{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect52:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#correct5{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#correct5:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#incorrect53{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-}
-#incorrect53:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-/* Boring stuff down here */
-#nextQuestion{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
+#nextQuestion, #finalScore {
     font-size: 14px;
     background-color: gold;
 }
 
-#finalScore{
-    height: 50px;
-    width:100px;
-    margin: 15px;
-    border-radius: 12px;
-    font-size: 14px;
-    background-color: gold;
+#incorrect11:hover, #incorrect12:hover, #correct1:hover, #incorrect13:hover, #incorrect21:hover, #correct2:hover, #incorrect22:hover, #incorrect23:hover, #incorrect31:hover, #incorrect32:hover, #correct3:hover, #incorrect33:hover, #incorrect41:hover, #incorrect42:hover, #correct4:hover, #incorrect43:hover, #incorrect51:hover, #incorrect52:hover, #correct5:hover, #incorrect53:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-#pics1{
+
+#pics1, #flag, #pics2, #rings {
+    height: 250px;
+}
+
+#pics1 {
     width: 325px;
-    height: 250px;
 }
-#flag{
+
+#flag {
     width: 350px;
-    height: 250px;
 }
-#pics2{
+
+#pics2 {
     width: 400px;
-    height: 250px;
 }
-#rings{
+
+#rings {
     width: 425px;
-    height: 250px;
 }
-#pictures{
+
+#pictures {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -404,70 +181,39 @@ text-decoration: none;
     margin-bottom: 25px;
 }
 
-#textBox{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
+#textBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-#forumq1[type=text]{
+#forumq1[type=text], #forumq2[type=text], #forumq3[type=text], #forumq4[type=text], #forumq5[type=text] {
     border: 3px solid #929090;
     outline: none;
-    transition: 0.5;
-    -webkit-transition: 0.5s;
-    /* Got webkit tansition from w3schools to make the inputs look better when they are selected */
-}
-#forumq1[type=text]:focus {
-    border: 3px solid #555;
-}
-#forumq2[type=text]{
-    border: 3px solid #929090;
-    outline: none;
-    transition: 0.5;
+    transition: 0.5s;
     -webkit-transition: 0.5s;
 }
-#forumq2[type=text]:focus {
-    border: 3px solid #555;
-}
-#forumq3[type=text]{
-    margin: 5px;
-    border: 3px solid #929090;
-    outline: none;
-    transition: 0.5;
-    -webkit-transition: 0.5s;
-}
-#forumq3[type=text]:focus {
-    border: 3px solid #555;
-}
-#forum3btn{
-    margin: 5px;
-    margin-left:0%;
-}
-#forumq4[type=text]{
-    border: 3px solid #929090;
-    outline: none;
-    transition: 0.5;
-    -webkit-transition: 0.5s;
-}
-#forumq4[type=text]:focus {
-    border: 3px solid #555;
-}
-#forumq5[type=text]{
-    border: 3px solid #929090;
-    outline: none;
-    transition: 0.5;
-    -webkit-transition: 0.5s;
-}
-#forumq5[type=text]:focus {
-    border: 3px solid #555;
-}
-.correct{
-background-color:green;
-color: white;
 
+#forumq1[type=text]:focus, #forumq2[type=text]:focus, #forumq3[type=text]:focus, #forumq4[type=text]:focus, #forumq5[type=text]:focus {
+    border: 3px solid #555;
 }
-.incorrect{
-background-color: #D8232A;
-color: white;
+
+#forumq3 {
+    margin: 5px;
+}
+
+#forum3btn {
+    margin: 5px;
+    margin-left: 0%;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.incorrect {
+    background-color: #D8232A;
+    color: white;
 }
