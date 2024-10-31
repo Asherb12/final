@@ -196,23 +196,47 @@ a {
     transition: 0.5s;
     -webkit-transition: 0.5s;
 }
-
-#forumq1[type=text]:focus, #forumq2[type=text]:focus, #forumq3[type=text]:focus, #forumq4[type=text]:focus, #forumq5[type=text]:focus {
+#forumq2[type=text]:focus {
     border: 3px solid #555;
 }
-
-#forumq3 {
+#forumq3[type=text]{
     margin: 5px;
+    border: 3px solid #929090;
+    outline: none;
+    transition: 0.5;
+    -webkit-transition: 0.5s;
 }
-
-#forum3btn {
+#forumq3[type=text]:focus {
+    border: 3px solid #555;
+}
+#forum3btn{
     margin: 5px;
     margin-left: 0%;
 }
+#forumq4[type=text]{
+    border: 3px solid #929090;
+    outline: none;
+    transition: 0.5;
+    -webkit-transition: 0.5s;
+}
+#forumq4[type=text]:focus {
+    border: 3px solid #555;
+}
+#forumq5[type=text]{
+    border: 3px solid #929090;
+    outline: none;
+    transition: 0.5;
+    -webkit-transition: 0.5s;
+}
+#forumq5[type=text]:focus {
+    border: 3px solid #555;
+}
+.correct{
+background-color:green;
+color: white;
 
-.correct {
-    background-color: green;
-    color: white;
+#forumq1[type=text]:focus, #forumq2[type=text]:focus, #forumq3[type=text]:focus, #forumq4[type=text]:focus, #forumq5[type=text]:focus {
+    border: 3px solid #555;
 }
 
 .incorrect {
@@ -220,6 +244,16 @@ a {
     color: white;
 }
 
+
+#endbut{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 3px solid #555;
+}
 button img{
 width: 40px;
 height: 40px;
