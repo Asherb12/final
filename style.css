@@ -373,8 +373,20 @@ text-decoration: none;
     font-size: 14px;
     background-color: gold;
 }
-#pics{
+#pics1{
     width: 325px;
+    height: 250px;
+}
+#flag{
+    width: 350px;
+    height: 250px;
+}
+#pics2{
+    width: 400px;
+    height: 250px;
+}
+#rings{
+    width: 425px;
     height: 250px;
 }
 #pictures{
