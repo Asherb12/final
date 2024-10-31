@@ -15,6 +15,10 @@ html{
     font-size: 24px;
 }
 
+#zeroOutOfTen, #oneOutofTen, #twoOutofTen, #threeOutofTen, #fourOutofTen, #fiveOutofTen, #sixOutofTen, #sevenOutofTen, #eightOutofTen, #nineOutoften , #tenOutofTen{
+color: beige;
+}
+
 .home{
     
     display:flex;
