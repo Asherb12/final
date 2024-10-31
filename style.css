@@ -1,10 +1,23 @@
-/* Fill up the pages */
 html {
     background-color: darkolivegreen;
     border: 10px solid gold;
     border-radius: 5px;
     height: 100%;
     width: 100%;
+}
+
+#homeimg {
+    width: 25px;
+    height: 25px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#well {
+    font-size: 35px;
+    color: white;
 }
 
 #finalscore {
@@ -14,7 +27,7 @@ html {
     color: beige;
 }
 
-.next {
+.next, .home {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,21 +35,7 @@ html {
     font-size: 24px;
 }
 
-#zeroOutOfTen, #oneOutofTen, #twoOutofTen, #threeOutofTen, #fourOutofTen, #fiveOutofTen, #sixOutofTen, #sevenOutofTen, #eightOutofTen, #nineOutOfTen, #tenOutofTen {
-    color: beige;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.home {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#homeBtn {
+#homeBtn, #nextQuestion {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -44,9 +43,14 @@ html {
     height: 50px;
     margin: 15px;
     border-radius: 12px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: background-color 0.3s;
 }
 
-#homeBtn:hover {
+#homeBtn:hover, .nextQuestion:hover {
+    background-color: lightgreen;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -55,78 +59,22 @@ a {
     text-decoration: none;
 }
 
-#instcon {
+#instcon, #wordscon, #well, #task, #inst, #pictures, #textBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-#wordscon {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#well {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 #task {
     width: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
     margin: auto;
-    margin-bottom: 25px;
 }
 
-#start {
-    top: 250px;
-    left: 400px;
-    font-size: 100px;
-    color: white;
-    background-color: red;
-    border: 5px solid black;
-    border-radius: 25px;
-    padding: 50px;
-}
-
-#start:hover {
-    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.24), 0 42px 125px 0 rgba(0, 0, 0, 0.19);
-}
-
-#inst {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-#words1, #words2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 5px;
-}
-
-#words2 {
+#pics1, #flag, #pics2, #rings {
     width: 800px;
-    margin-bottom: 25px;
-}
-
-.startb {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    height: 400px;
 }
 
 .questionOne, .questionThree, .questionFive, .questionSeven, .questionNine {
@@ -139,122 +87,87 @@ a {
     border-radius: 12px;
 }
 
-#incorrect11, #incorrect12, #correct1, #incorrect13, #incorrect21, #correct2, #incorrect22, #incorrect23, #incorrect31, #incorrect32, #correct3, #incorrect33, #incorrect41, #incorrect42, #correct4, #incorrect43, #incorrect51, #incorrect52, #correct5, #incorrect53, #nextQuestion, #finalScore {
-    height: 50px;
-    width: 100px;
+button {
+    height: 150px;
+    width: 300px;
     margin: 15px;
     border-radius: 12px;
+    color: black;
+    border: 2px solid black;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-#nextQuestion, #finalScore {
-    font-size: 14px;
-    background-color: gold;
+button:hover {
+    background-color: green;
 }
 
-#incorrect11:hover, #incorrect12:hover, #correct1:hover, #incorrect13:hover, #incorrect21:hover, #correct2:hover, #incorrect22:hover, #incorrect23:hover, #incorrect31:hover, #incorrect32:hover, #correct3:hover, #incorrect33:hover, #incorrect41:hover, #incorrect42:hover, #correct4:hover, #incorrect43:hover, #incorrect51:hover, #incorrect52:hover, #correct5:hover, #incorrect53:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+button.correct {
+    background-color: green;
+    color: black;
 }
 
-#pics1, #flag, #pics2, #rings {
-    height: 250px;
-}
-
-#pics1 {
-    width: 325px;
-}
-
-#flag {
-    width: 350px;
-}
-
-#pics2 {
-    width: 400px;
-}
-
-#rings {
-    width: 425px;
-}
-
-#pictures {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 25px;
-}
-
-#textBox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#forumq1[type=text], #forumq2[type=text], #forumq3[type=text], #forumq4[type=text], #forumq5[type=text] {
-    border: 3px solid #929090;
-    outline: none;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-}
-#forumq2[type=text]:focus {
-    border: 3px solid #555;
-}
-#forumq3[type=text]{
-    margin: 5px;
-    border: 3px solid #929090;
-    outline: none;
-    transition: 0.5;
-    -webkit-transition: 0.5s;
-}
-#forumq3[type=text]:focus {
-    border: 3px solid #555;
-}
-#forum3btn{
-    margin: 5px;
-    margin-left: 0%;
-}
-#forumq4[type=text]{
-    border: 3px solid #929090;
-    outline: none;
-    transition: 0.5;
-    -webkit-transition: 0.5s;
-}
-#forumq4[type=text]:focus {
-    border: 3px solid #555;
-}
-#forumq5[type=text]{
-    border: 3px solid #929090;
-    outline: none;
-    transition: 0.5;
-    -webkit-transition: 0.5s;
-}
-#forumq5[type=text]:focus {
-    border: 3px solid #555;
-}
-.correct{
-background-color:green;
-color: white;
-
-#forumq1[type=text]:focus, #forumq2[type=text]:focus, #forumq3[type=text]:focus, #forumq4[type=text]:focus, #forumq5[type=text]:focus {
-    border: 3px solid #555;
-}
-
-.incorrect {
-    background-color: #D8232A;
+button.incorrect {
+    background-color: red;
     color: white;
 }
 
-
-#endbut{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+#forum1btn, #forum2btn, #forum3btn, #forum4btn, #forum5btn {
+    text-align: center;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    border: 3px solid #555;
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: background-color 0.3s;
 }
-button img{
-width: 40px;
-height: 40px;
+
+input[type="text"] {
+    font-size: 20px;
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"].correct {
+    background-color: green;
+}
+
+.score-display {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.restart-button {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#start {
+    width: 400px;
+    height: 200px;
+    padding-top: 250px;
+    padding-left: 400px;
+    font-size: 100px;
+    color: white;
+    background-color: red;
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 50px;
+}
+
+#start:hover {
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.24), 0 42px 125px 0 rgba(0, 0, 0, 0.19);
 }

@@ -311,6 +311,15 @@ $(document).ready(function() {
     initializeScoreMessages();
     displayScoreMessage();
 });
-var results = $('#finalscore');
+// Function to update the final score display
+function updateFinalScore() {
+    var finalScore = parseInt(localStorage.getItem("tscore")) || 0;
+    $('#finalscore').text(finalScore);
+}
 
-$('#finalscore').text(currentScore);
+
+$(document).ready(function() {
+    initializeScoreMessages();
+    displayScoreMessage();
+    updateFinalScore(); 
+});
