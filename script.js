@@ -275,7 +275,6 @@ function initializeScoreMessages() {
 
 // Function to display the correct score message based on the score
 function displayScoreMessage() {
-    // Get the score from localStorage
     var score = parseInt(localStorage.getItem("tscore")) || 0;
 
     // Display the corresponding score message
