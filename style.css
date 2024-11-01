@@ -15,6 +15,13 @@
     flex-direction: row;
     justify-content: center;
 }
+.fsdisplay{
+font-size: 60px;
+padding: 20px;
+
+
+}
+
 
 #well {
     font-size: 35px;
