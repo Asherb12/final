@@ -74,7 +74,7 @@ a {
     margin: auto;
 }
 
-#pics1, #flag, #pics2, #rings {
+#pics1, #flag, #pics2, #rings, #imghome {
     width: 800px;
     height: 400px;
     object-fit: cover;
