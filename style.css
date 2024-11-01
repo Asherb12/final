@@ -120,6 +120,7 @@ button.incorrect {
     font-size: 18px;
     width: 100px;
     height: 60px;
+    padding-top: 4px;
     padding-bottom: 10px;
     margin: 5px;
     border-radius: 12px;
