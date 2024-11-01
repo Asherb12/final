@@ -280,26 +280,37 @@ function displayScoreMessage() {
     // Display the corresponding score message
     if (score === 0) {
         zeroOutOfTen1.show();
+        zeroOutOfTen1.toggleClass("finalscreenclass")
     } else if (score === 1) {
         oneOutOfTen1.show();
+        oneOutOfTen1.toggleClass("finalscreenclass")
     } else if (score === 2) {
         twoOutOfTen1.show();
+        twoOutOfTen1.toggleClass("finalscreenclass")
     } else if (score === 3) {
         threeOutOfTen1.show();
+        threeOutOfTen1.toggleClass("finalscreenclass")
     } else if (score === 4) {
         fourOutOfTen1.show();
+        fourOutOfTen1.toggleClass("finalscreenclass")
     } else if (score === 5) {
         fiveOutOfTen1.show();
+        fiveOutOfTen1.toggleClass("finalscreenclass")
     } else if (score === 6) {
         sixOutOfTen1.show();
+        sixOutOfTen1.toggleClass("finalscreenclass")
     } else if (score === 7) {
         sevenOutOfTen1.show();
+        sevenOutOfTen1.toggleClass("finalscreenclass")
     } else if (score === 8) {
         eightOutOfTen1.show();
+        eightOutOfTen1.toggleClass("finalscreenclass")
     } else if (score === 9) {
         nineOutOfTen1.show();
+        nineOutOfTen1.toggleClass("finalscreenclass")
     } else if (score === 10) {
         tenOutOfTen1.show();
+        tenOutOfTen1.toggleClass("finalscreenclass")
     } else {
         console.error("Score out of range");
     }
@@ -313,6 +324,7 @@ $(document).ready(function() {
 // Function to update the final score display
 function updateFinalScore() {
     var finalScore = parseInt(localStorage.getItem("tscore")) || 0;
+    console.log(finalScore);
     finalScore.toggleClass("fsdisplay");
     $('#finalscore').text( "Your score is",finalScore);
 }
