@@ -117,11 +117,12 @@ button.incorrect {
 
 #forum1btn, #forum2btn, #forum3btn, #forum4btn, #forum5btn {
     align-items: center;
+    justify-content: center;
     font-size: 18px;
     width: 100px;
     height: 60px;
     padding-top: 4px;
-    padding-bottom: 10px;
+    padding-bottom: 4px;
     margin: 5px;
     border-radius: 25px;
     background-color: white;
