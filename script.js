@@ -34,6 +34,7 @@ correctq1.on("click", function() {
 
 
 incorrectq1.on("click", function() {
+    clear();
     $(this).toggleClass("incorrect"); 
     $('#correct1').attr("disabled", true);
     $("#correct1").toggleClass("correct");
@@ -241,92 +242,70 @@ var forum5btnjs = $('#forum5btn');
     }
    
  });
-
-
-
-// Define all the score messages
-var zeroOutOfTen1 = $('#zeroOutOfTen');
-var oneOutOfTen1 = $('#oneOutOfTen');
-var twoOutOfTen1 = $('#twoOutOfTen');
-var threeOutOfTen1 = $('#threeOutOfTen');
-var fourOutOfTen1 = $('#fourOutOfTen');
-var fiveOutOfTen1 = $('#fiveOutOfTen');
-var sixOutOfTen1 = $('#sixOutOfTen');
-var sevenOutOfTen1 = $('#sevenOutOfTen');
-var eightOutOfTen1 = $('#eightOutOfTen');
-var nineOutOfTen1 = $('#nineOutOfTen');
-var tenOutOfTen1 = $('#tenOutOfTen');
-
-// Function to initialize score messages
-function initializeScoreMessages() {
-    // Disable all score messages
-    zeroOutOfTen1.hide();
-    oneOutOfTen1.hide();
-    twoOutOfTen1.hide();
-    threeOutOfTen1.hide();
-    fourOutOfTen1.hide();
-    fiveOutOfTen1.hide();
-    sixOutOfTen1.hide();
-    sevenOutOfTen1.hide();
-    eightOutOfTen1.hide();
-    nineOutOfTen1.hide();
-    tenOutOfTen1.hide();
-}
-
-// Function to display the correct score message based on the score
-function displayScoreMessage() {
-    var score = parseInt(localStorage.getItem("tscore")) || 0;
-
-    // Display the corresponding score message
-    if (score === 0) {
-        zeroOutOfTen1.toggleClass("finalscreenclass")
-        zeroOutOfTen1.show();
-      
-    } else if (score === 1) {
-        oneOutOfTen1.toggleClass("finalscreenclass")
-        oneOutOfTen1.show();
-      
-    } else if (score === 2) {
-        twoOutOfTen1.toggleClass("finalscreenclass")
-        twoOutOfTen1.show();
-        
-    } else if (score === 3) {
-        threeOutOfTen1.toggleClass("finalscreenclass")
-        threeOutOfTen1.show();
-        
-    } else if (score === 4) {
-        fourOutOfTen1.toggleClass("finalscreenclass")
-        fourOutOfTen1.show();
+//  decleares the final screen sxcore prompts
+ var zeroOutOfTen = $('#zeroOutOfTen');
+ var oneOutOfTen = $('#oneOutOfTen');
+ var twoOutOfTen = $('#twoOutOfTen');
+ var threeOutOfTen = $('#threeOutOfTen');
+ var fourOutOfTen = $('#fourOutOfTen');
+ var fiveOutOfTen = $('#fiveOutOfTen');
+ var sixOutOfTen = $('#sixOutOfTen');
+ var sevenOutOfTen = $('#sevenOutOfTen');
+ var eightOutOfTen = $('#eightOutOfTen');
+ var nineOutOfTen = $('#nineOutOfTen');
+ var tenOutOfTen = $('#tenOutOfTen');
+ 
+//  initalizes the css class of the prompts
+ function styleFinalElements() {
+     $('.finalscreenclass').css({
+         'color': 'white',
+         'font-size': '20px'
+     });
+ }
+//  sets the css classes
+ function initializeScoreMessages() {
+     [zeroOutOfTen, oneOutOfTen, twoOutOfTen, threeOutOfTen, fourOutOfTen, fiveOutOfTen, 
+      sixOutOfTen, sevenOutOfTen, eightOutOfTen, nineOutOfTen, tenOutOfTen].forEach(function(element) {
+         element.hide().addClass('finalscreenclass');
+     });
      
-    } else if (score === 5) {
-        fiveOutOfTen1.toggleClass("finalscreenclass")
-        fiveOutOfTen1.show();
-       
-    } else if (score === 6) {
-        sixOutOfTen1.toggleClass("finalscreenclass")
-        sixOutOfTen1.show();
-        
-    } else if (score === 7) {
-        sevenOutOfTen1.toggleClass("finalscreenclass")
-        sevenOutOfTen1.show();
-       
-    } else if (score === 8) {
-        eightOutOfTen1.toggleClass("finalscreenclass")
-        eightOutOfTen1.show();
-   
-    } else if (score === 9) {
-        nineOutOfTen1.toggleClass("finalscreenclass")
-        nineOutOfTen1.show();
-        
-    } else if (score === 10) {
-        tenOutOfTen1.toggleClass("finalscreenclass")
-        tenOutOfTen1.show();
-       
-    } else {
-        console.error("Score out of range");
-    }
-}
-
+     styleFinalElements();
+ }
+//  shows the corresponding prompt to whatever score the user gets
+ function displayScoreMessage() {
+     var score = parseInt(localStorage.getItem("tscore")) || 0;
+ 
+     if (score === 0) {
+         zeroOutOfTen.show();
+     } else if (score === 1) {
+         oneOutOfTen.show();
+     } else if (score === 2) {
+         twoOutOfTen.show();
+     } else if (score === 3) {
+         threeOutOfTen.show();
+     } else if (score === 4) {
+         fourOutOfTen.show();
+     } else if (score === 5) {
+         fiveOutOfTen.show();
+     } else if (score === 6) {
+         sixOutOfTen.show();
+     } else if (score === 7) {
+         sevenOutOfTen.show();
+     } else if (score === 8) {
+         eightOutOfTen.show();
+     } else if (score === 9) {
+         nineOutOfTen.show();
+     } else if (score === 10) {
+         tenOutOfTen.show();
+     } else {
+         console.error("Score out of range");
+     }
+ }
+ 
+ $(document).ready(function() {
+     initializeScoreMessages();
+ });
+ 
 // Initialize score messages when the document is ready
 $(document).ready(function() {
     initializeScoreMessages();
@@ -340,7 +319,7 @@ function updateFinalScore() {
     $('#finalscore').text( "Score:" +" "+ finalScore+"/10");
 }
 
-
+// runs all the functions when each page is loaded 
 $(document).ready(function() {
     initializeScoreMessages();
     displayScoreMessage();

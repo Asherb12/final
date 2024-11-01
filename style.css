@@ -1,5 +1,15 @@
-
+/* Background container styling */
 .background {
+    background-color: darkolivegreen;
+    border: 10px solid gold;
+    border-radius: 5px;
+    height: 900px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Background container styling with flexible height */
+.background1 {
     background-color: darkolivegreen;
     border: 10px solid gold;
     border-radius: 5px;
@@ -8,6 +18,7 @@
     padding: 10px;
 }
 
+/* Home image styling */
 #homeimg {
     width: 25px;
     height: 25px;
@@ -16,16 +27,20 @@
     flex-direction: row;
     justify-content: center;
 }
-.fsdisplay{
-font-size: 60px;
-padding: 20px;
+
+/* Font size display */
+.fsdisplay {
+    font-size: 60px;
+    padding: 20px;
 }
 
+/* Styling for 'well' text */
 #well {
     font-size: 35px;
     color: white;
 }
 
+/* Final score display */
 #finalscore {
     display: flex;
     flex-direction: row;
@@ -33,15 +48,16 @@ padding: 20px;
     color: beige;
 }
 
+/* Next and Home button styling */
 .next, .home {
-    display: inline-block;
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 24px;
 }
 
+/* Home and Next button styling */
 #homeBtn, #nextQuestion {
     text-align: center;
     justify-content: center;
@@ -56,16 +72,19 @@ padding: 20px;
     transition: background-color 0.3s;
 }
 
-#homeBtn:hover, .nextQuestion:hover {
+/* Hover effects for buttons */
+#homeBtn:hover, #nextQuestion:hover, #restart:hover {
     background-color: lightgreen;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Link styling */
 a {
     color: black;
     text-decoration: none;
 }
 
+/* Container for instruction, words, well, etc. */
 #instcon, #wordscon, #well, #task, #inst, #pictures, #textBox {
     display: flex;
     flex-direction: row;
@@ -75,18 +94,27 @@ a {
     border-radius: 100px;
 }
 
+/* Task container styling */
 #task {
     width: 800px;
     margin: auto;
 }
 
+/* Image styling */
 #pics1, #flag, #pics2, #rings, #imghome, #finalGif {
     width: 800px;
     height: 400px;
     object-fit: contain;
 }
 
+/* Specific image styling */
+#pics2 {
+    width: 1000px;
+    height: 500px;
+    object-fit: contain;
+}
 
+/* Question styles */
 .questionOne, .questionThree, .questionFive, .questionSeven, .questionNine {
     display: flex;
     flex-direction: row;
@@ -97,32 +125,36 @@ a {
     border-radius: 25px;
 }
 
+/* General button styling */
 button {
     font-size: 30px;
     height: 150px;
     width: 300px;
     margin: 15px;
-    border-radius:50px;
+    border-radius: 50px;
     color: black;
     border: 2px solid black;
     transition: background-color 0.3s, color 0.3s;
-
 }
 
+/* Button hover effect */
 button:hover {
     background-color: gray;
 }
 
+/* Correct button styling */
 button.correct {
     background-color: green;
     color: black;
 }
 
+/* Incorrect button styling */
 button.incorrect {
     background-color: red;
     color: white;
 }
 
+/* Forum buttons styling */
 #forum1btn, #forum2btn, #forum3btn, #forum4btn, #forum5btn {
     align-items: center;
     justify-content: center;
@@ -138,10 +170,8 @@ button.incorrect {
     border: 2px solid black;
     transition: background-color 0.3s;
 }
-.incorrect{
-background-color: red;
 
-}
+/* Input styling */
 input[type="text"] {
     font-size: 20px;
     height: 50px;
@@ -152,20 +182,35 @@ input[type="text"] {
     transition: border-color 0.3s;
 }
 
+/* Correct input background color */
 input[type="text"].correct {
     background-color: green;
 }
 
+/* Score display styling */
 .score-display {
     font-size: 48px;
     font-weight: bold;
 }
-#endbut{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
 
+/* End button container */
+#endbut, #endbut1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
 }
+
+/* Troll button styling */
+#troll {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+}
+
+/* Restart button styling */
 .restart-button {
     font-size: 30px;
     bottom: 100px;
@@ -177,6 +222,7 @@ input[type="text"].correct {
     border-radius: 5px;
 }
 
+/* Start button styling */
 #start {
     width: 800px;
     height: 250px;
@@ -189,71 +235,83 @@ input[type="text"].correct {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
+/* Start button hover effect */
 #start:hover {
     box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.24), 0 42px 125px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Centered start button */
 .startb {
-display:flex;
-flex-direction: row;
-justify-content: center;
-
-}
-
-h1{
-color:white;
-font-size: 30px;
-
-}
-#div1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
-#task{
-    color:white;
+/* Heading styling */
+h1 {
+    color: white;
+    font-size: 30px;
+}
+
+/* Div container styling */
+#div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Task text styling */
+#task {
+    color: white;
     font-size: 24px;
 }
 
-#task1{
+/* Centered task container */
+#task1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-#words1{
-padding-left: 300px;
-color: white;
-font-size: 30px;
+/* Words styling */
+#words1 {
+    padding-left: 300px;
+    color: white;
+    font-size: 30px;
 }
 
-ul{
-color: white;
-padding-left: 250px;
-font-size: 20px;
-
+#words2 {
+    font-size: 24px;
 }
-#inst{
+
+/* Unordered list styling */
+ul {
+    color: white;
+    padding-left: 250px;
+    font-size: 20px;
+}
+
+/* Instruction text styling */
+#inst {
     font-size: 35px;
 }
 
-#finalscreenclass{
-
- font-size: 32px;
- color: white;
-
+/* Final screen text styling */
+#finalscreenclass {
+    font-size: 26px;
+    color: white;
 }
-#endTags{
+
+/* End tags container */
+#endTags {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+/* Restart button color */
 #restart {
-background-color: gold;
+    background-color: gold;
 }
