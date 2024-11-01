@@ -313,7 +313,8 @@ $(document).ready(function() {
 // Function to update the final score display
 function updateFinalScore() {
     var finalScore = parseInt(localStorage.getItem("tscore")) || 0;
-    $('#finalscore').text(finalScore);
+    finalScore.toggleClass("fsdisplay");
+    $('#finalscore').text( "Your score is",finalScore);
 }
 
 
