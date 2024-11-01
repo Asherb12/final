@@ -85,9 +85,7 @@ a {
     height: 400px;
     object-fit: contain;
 }
-#finalGif{
-    margin:10px;
-}
+
 
 .questionOne, .questionThree, .questionFive, .questionSeven, .questionNine {
     display: flex;
