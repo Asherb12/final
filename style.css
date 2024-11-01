@@ -63,7 +63,7 @@ a {
 
 #instcon, #wordscon, #well, #task, #inst, #pictures, #textBox {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     margin-bottom: 25px;
@@ -91,7 +91,7 @@ a {
 }
 
 button {
-    font-size: 20px;
+    font-size: 30px;
     height: 150px;
     width: 300px;
     margin: 15px;
@@ -116,12 +116,12 @@ button.incorrect {
 }
 
 #forum1btn, #forum2btn, #forum3btn, #forum4btn, #forum5btn {
-    text-align: center;
-    justify-content: center;
     align-items: center;
+    font-size: 18px;
     width: 100px;
-    height: 50px;
-    margin: 15px;
+    height: 60px;
+    padding-bottom: 10px;
+    margin: 5px;
     border-radius: 25px;
     background-color: white;
     color: black;
@@ -135,7 +135,7 @@ background-color: red;
 input[type="text"] {
     font-size: 20px;
     height: 50px;
-    width: 225px;
+    width: 300px;
     padding: 10px;
     border: 2px solid black;
     border-radius: 5px;
