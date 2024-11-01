@@ -326,7 +326,7 @@ function updateFinalScore() {
     var finalScore = parseInt(localStorage.getItem("tscore")) || 0;
     console.log(finalScore);
     $('#finalscore').toggleClass("fsdisplay");
-    $('#finalscore').text( "Score:" +""+ finalScore+"/10");
+    $('#finalscore').text( "Score:" +" "+ finalScore+"/10");
 }
 
 
