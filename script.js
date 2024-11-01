@@ -279,38 +279,49 @@ function displayScoreMessage() {
 
     // Display the corresponding score message
     if (score === 0) {
-        zeroOutOfTen1.show();
         zeroOutOfTen1.toggleClass("finalscreenclass")
+        zeroOutOfTen1.show();
+      
     } else if (score === 1) {
-        oneOutOfTen1.show();
         oneOutOfTen1.toggleClass("finalscreenclass")
+        oneOutOfTen1.show();
+      
     } else if (score === 2) {
-        twoOutOfTen1.show();
         twoOutOfTen1.toggleClass("finalscreenclass")
+        twoOutOfTen1.show();
+        
     } else if (score === 3) {
-        threeOutOfTen1.show();
         threeOutOfTen1.toggleClass("finalscreenclass")
+        threeOutOfTen1.show();
+        
     } else if (score === 4) {
-        fourOutOfTen1.show();
         fourOutOfTen1.toggleClass("finalscreenclass")
+        fourOutOfTen1.show();
+     
     } else if (score === 5) {
-        fiveOutOfTen1.show();
         fiveOutOfTen1.toggleClass("finalscreenclass")
+        fiveOutOfTen1.show();
+       
     } else if (score === 6) {
-        sixOutOfTen1.show();
         sixOutOfTen1.toggleClass("finalscreenclass")
+        sixOutOfTen1.show();
+        
     } else if (score === 7) {
-        sevenOutOfTen1.show();
         sevenOutOfTen1.toggleClass("finalscreenclass")
+        sevenOutOfTen1.show();
+       
     } else if (score === 8) {
-        eightOutOfTen1.show();
         eightOutOfTen1.toggleClass("finalscreenclass")
+        eightOutOfTen1.show();
+   
     } else if (score === 9) {
-        nineOutOfTen1.show();
         nineOutOfTen1.toggleClass("finalscreenclass")
+        nineOutOfTen1.show();
+        
     } else if (score === 10) {
-        tenOutOfTen1.show();
         tenOutOfTen1.toggleClass("finalscreenclass")
+        tenOutOfTen1.show();
+       
     } else {
         console.error("Score out of range");
     }
@@ -326,7 +337,7 @@ function updateFinalScore() {
     var finalScore = parseInt(localStorage.getItem("tscore")) || 0;
     console.log(finalScore);
     $('#finalscore').toggleClass("fsdisplay");
-    $('#finalscore').text( "Score:" +""+ finalScore+"/10");
+    $('#finalscore').text( "Score:" +" "+ finalScore+"/10");
 }
 
 

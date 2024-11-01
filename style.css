@@ -80,11 +80,12 @@ a {
     margin: auto;
 }
 
-#pics1, #flag, #pics2, #rings, #imghome {
+#pics1, #flag, #pics2, #rings, #imghome, #finalGif {
     width: 800px;
     height: 400px;
     object-fit: contain;
 }
+
 
 .questionOne, .questionThree, .questionFive, .questionSeven, .questionNine {
     display: flex;
