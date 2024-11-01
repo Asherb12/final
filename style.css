@@ -247,4 +247,8 @@ font-size: 20px;
     font-size: 35px;
 }
 
-endTags
+#endTags{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
