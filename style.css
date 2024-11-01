@@ -118,9 +118,9 @@ button.incorrect {
 #forum1btn, #forum2btn, #forum3btn, #forum4btn, #forum5btn {
     align-items: center;
     font-size: 18px;
-    width: 75px;
-    height: 50px;
-    margin: 15px;
+    width: 100px;
+    height: 75px;
+    margin: 5px;
     border-radius: 12px;
     background-color: white;
     color: black;
