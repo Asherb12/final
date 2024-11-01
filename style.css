@@ -18,6 +18,18 @@
     padding: 10px;
 }
 
+.background2{
+    height:1000px;
+    background-color: darkolivegreen;
+    border: 10px solid gold;
+    border-radius: 5px;
+  
+    width: 100%;
+    padding: 10px;
+}
+
+
+
 /* Home image styling */
 #homeimg {
     width: 25px;
