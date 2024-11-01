@@ -1,3 +1,4 @@
+
 .background {
     background-color: darkolivegreen;
     border: 10px solid gold;
@@ -18,10 +19,7 @@
 .fsdisplay{
 font-size: 60px;
 padding: 20px;
-
-
 }
-
 
 #well {
     font-size: 35px;
@@ -235,7 +233,6 @@ font-size: 30px;
 
 }
 
-
 ul{
 color: white;
 padding-left: 250px;
@@ -251,4 +248,9 @@ font-size: 20px;
  font-size: 32px;
  align-items: center;
 
+}
+#endTags{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
