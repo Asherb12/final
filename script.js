@@ -260,7 +260,8 @@ var forum5btnjs = $('#forum5btn');
      $('.finalscreenclass').css({
          'color': 'white',
          'font-size': '20px',
-         'text-align': 'center'
+         'text-align': 'center',
+         'font': ''
      });
  }
 //  sets the css classes
