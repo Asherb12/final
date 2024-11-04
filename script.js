@@ -259,7 +259,8 @@ var forum5btnjs = $('#forum5btn');
  function styleFinalElements() {
      $('.finalscreenclass').css({
          'color': 'white',
-         'font-size': '20px'
+         'font-size': '20px',
+         'text-align': 'center'
      });
  }
 //  sets the css classes
@@ -301,7 +302,7 @@ var forum5btnjs = $('#forum5btn');
          console.error("Score out of range");
      }
  }
- 
+//   when page loads the corresponding score message is shown
  $(document).ready(function() {
      initializeScoreMessages();
  });
