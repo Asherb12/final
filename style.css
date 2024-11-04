@@ -256,7 +256,6 @@ input[type="text"].correct {
     width: 800px;
     height: 250px;
     font-size: 100px;
-    font-family: "Slaba 13px", sans-serif;
     color: white;
     background-color: red;
     border: 5px solid black;
@@ -311,10 +310,12 @@ h1 {
     padding-left: 300px;
     color: white;
     font-size: 30px;
+    font-family: "Sriracha", sans-serif;
 }
 
 #words2 {
-    font-size: 24px;
+    font-size: 20px;
+    font-family: "Sriracha", sans-serif;
 }
 
 /* Unordered list styling */
@@ -326,7 +327,10 @@ ul {
 
 /* Instruction text styling */
 #inst {
-    font-size: 35px;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: "Bagel Fat One", sans-serif;
 }
 
 /* Final screen text styling */
