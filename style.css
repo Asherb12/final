@@ -48,6 +48,19 @@
 
 /* Styling for 'well' text */
 #well {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: "Bagel Fat One", sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+/* Styling for 'qhead' text */
+#qhead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Sriracha", sans-serif;
     font-size: 35px;
     color: white;
 }
@@ -71,9 +84,6 @@
 
 /* Home and Next button styling */
 #homeBtn, #nextQuestion {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     width: 100px;
     height: 50px;
     margin: 15px;
@@ -140,8 +150,8 @@ a {
 /* General button styling */
 button {
     font-size: 30px;
-    height: 150px;
     width: 300px;
+    height: 150px;
     margin: 15px;
     border-radius: 50px;
     color: black;
@@ -239,6 +249,7 @@ input[type="text"].correct {
     width: 800px;
     height: 250px;
     font-size: 100px;
+    font-family: "Slaba 13px", sans-serif;
     color: white;
     background-color: red;
     border: 5px solid black;
@@ -285,6 +296,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family: "Slaba 13px", sans-serif;
 }
 
 /* Words styling */
