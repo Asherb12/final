@@ -166,6 +166,12 @@ button.incorrect {
     color: white;
 }
 
+.incorrect{
+background-color: red;
+color: white;
+
+}
+
 /* Forum buttons styling */
 #forum1btn, #forum2btn, #forum3btn, #forum4btn, #forum5btn {
     align-items: center;
