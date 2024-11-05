@@ -261,7 +261,7 @@ var forum5btnjs = $('#forum5btn');
          'color': 'white',
          'font-size': '20px',
          'text-align': 'center',
-         'font-family': 'Sriracha', 'sans-serif'
+         'font-family': 'Sriracha, sans-serif'
      });
  }
 //  sets the css classes
