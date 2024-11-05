@@ -331,14 +331,3 @@ $(document).ready(function() {
     displayScoreMessage();
     updateFinalScore(); 
 });
-
-// // Initialize score messages when the document is ready
-// $(document).ready(function() {
-//     initializeScoreMessages();
-//     displayScoreMessage();
-// });
-
-// //   when page loads the corresponding score message is shown
-// $(document).ready(function() {
-//     initializeScoreMessages();
-// });
