@@ -37,8 +37,6 @@ var forum4btnjs = $('#forum4btn');
 var forumq5c = $('#forumq5');
 var forum5btnjs = $('#forum5btn');
 
-
-
 //  Question 1 multiple choice
 correctq1.on("click", function() {
     clear();
@@ -50,7 +48,6 @@ correctq1.on("click", function() {
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled", true);  
 
 });
-
 
 // Function for Incorrect answer
 incorrectq1.on("click", function() {
@@ -83,8 +80,6 @@ incorrectq1.on("click", function() {
    
  });
 
-
-
 // Question 3 multiple choice 
 correctq2.on("click", function() {
     incrementScore();
@@ -102,7 +97,6 @@ incorrectq2.on("click", function() {
     correctq2.toggleClass("correct");
     $('#incorrect21,#incorrect22,#incorrect23').attr("disabled",true);
 });
-
 
 // Question 4 forms 
  forum2btnjs.on("click", function(){
@@ -126,8 +120,6 @@ incorrectq2.on("click", function() {
     }
    
  });
-
-
 
 // Question 5
 correctq3.on("click", function() {
@@ -223,6 +215,7 @@ incorrectq5.on("click", function() {
     correctq5.toggleClass("correct");
     $('#incorrect51,#incorrect52,#incorrect53').attr("disabled",true);
 });
+
 //  Question 10 form
  forum5btnjs.on("click", function(){
     var userInput = forumq5c.val().toLowerCase();
@@ -233,8 +226,6 @@ incorrectq5.on("click", function() {
         forumq5c.toggleClass("correct");
         forumq5c.attr("disabled", true);
         forum5btnjs.attr("disabled",true);
-    
-       
     }
     // else statement for incorrect answer
     else {
@@ -315,7 +306,6 @@ function incrementScore() {
          console.error("Score out of range"); // incase of score error
      }
  }
-
 
 // Function to update the final score display
 function updateFinalScore() {
