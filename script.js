@@ -1,30 +1,50 @@
+// Declarations
 
-//  function to clear teh local data storage to avoid repeating users score getting messed up 
-function clear(){
-localStorage.clear("tscore");
-}
-// decleares "tscore" and sets it to zero but uses a condtional to avoid reapeated resets to "tscore"
-if (localStorage.getItem("tscore") == null) {
-    localStorage.setItem("tscore", 0);
-}
+//  Final screen Dom Declarations
+var zeroOutOfTen = $('#zeroOutOfTen');
+var oneOutOfTen = $('#oneOutOfTen');
+var twoOutOfTen = $('#twoOutOfTen');
+var threeOutOfTen = $('#threeOutOfTen');
+var fourOutOfTen = $('#fourOutOfTen');
+var fiveOutOfTen = $('#fiveOutOfTen');
+var sixOutOfTen = $('#sixOutOfTen');
+var sevenOutOfTen = $('#sevenOutOfTen');
+var eightOutOfTen = $('#eightOutOfTen');
+var nineOutOfTen = $('#nineOutOfTen');
+var tenOutOfTen = $('#tenOutOfTen');
 
-// function to increase score when userinput is correct
-function incrementScore() {
-    var currentScore = parseInt(localStorage.getItem("tscore")) || 0;
-    currentScore++;
-    localStorage.setItem("tscore", currentScore);
-    console.log(currentScore);
-}
-
-//  Question 1 multiple choice
-
+//Button Questions DOM declarations 
 var correctq1 = $('#correct1');
 var incorrectq1 = $('#incorrect11, #incorrect12, #incorrect13');
+var correctq2 = $('#correct2');
+var incorrectq2 = $('#incorrect21, #incorrect22, #incorrect23');
+var correctq3 = $('#correct3');
+var incorrectq3 = $('#incorrect31, #incorrect32, #incorrect33');
+var correctq4 = $('#correct4');
+var incorrectq4 = $('#incorrect41, #incorrect42, #incorrect43');
+var correctq5 = $('#correct5');
+var incorrectq5 = $('#incorrect51, #incorrect52, #incorrect53');
+
+// Form questions DOM declarations
+var forumq1c = $('#forumq1');
+var forum1btnjs = $('#forum1btn');
+var forumq2c = $('#forumq2');
+var forum2btnjs = $('#forum2btn');
+var forumq3c = $('#forumq3');
+var forum3btnjs = $('#forum3btn');
+var forumq4c = $('#forumq4');
+var forum4btnjs = $('#forum4btn');
+var forumq5c = $('#forumq5');
+var forum5btnjs = $('#forum5btn');
 
 
+
+//  Question 1 multiple choice
 correctq1.on("click", function() {
     clear();
+    // console.log(getItem.localStorage("tscore"));
     incrementScore();  
+    // console.log(getItem.localStorage("tscore"));
     correctq1.toggleClass("correct"); 
     correctq1.attr("disabled", true);
     $('#incorrect11,#incorrect12,#incorrect13').attr("disabled", true);  
@@ -32,9 +52,10 @@ correctq1.on("click", function() {
 });
 
 
-
+// Function for Incorrect answer
 incorrectq1.on("click", function() {
     clear();
+    // console.log(getItem.localStorage("tscore"));
     $(this).toggleClass("incorrect"); 
     $('#correct1').attr("disabled", true);
     $("#correct1").toggleClass("correct");
@@ -42,24 +63,18 @@ incorrectq1.on("click", function() {
 });
 
 // Question 2 forums
-var forumq1c = $('#forumq1');
-var forum1btnjs = $('#forum1btn');
-
-
-
  forum1btnjs.on("click", function(){
     var userInput = forumq1c.val().toLowerCase();
     if( userInput == "norway"){
+        // console.log(userInput);
         incrementScore();  
+         // console.log(getItem.localStorage("tscore"));
         forumq1c.toggleClass("correct");
         forumq1c.attr("disabled", true);
         forum1btnjs.attr("disabled",true);
      
-       
-       
-    
-       
     }
+    // else statement for Incorrect answer
     else {
         forumq1c.toggleClass("incorrect");
         forumq1c.attr("disabled",true);
@@ -71,19 +86,16 @@ var forum1btnjs = $('#forum1btn');
 
 
 // Question 3 multiple choice 
-
-var correctq2 = $('#correct2');
-var incorrectq2 = $('#incorrect21, #incorrect22, #incorrect23');
-
 correctq2.on("click", function() {
     incrementScore();
+     // console.log(getItem.localStorage("tscore"));
     correctq2.toggleClass("correct"); 
     $("#correct2").attr("disabled", true);
     $('#incorrect21,#incorrect22,#incorrect23').attr("disabled",true);
    
 });
 
-
+// Function for Incorrect answer
 incorrectq2.on("click", function() {
     $(this).toggleClass("incorrect"); 
     $('#correct2').attr("disabled", true);
@@ -93,20 +105,20 @@ incorrectq2.on("click", function() {
 
 
 // Question 4 forms 
-var forumq2c = $('#forumq2');
-var forum2btnjs = $('#forum2btn');
-
  forum2btnjs.on("click", function(){
     var userInput = forumq2c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "clinton"){
+        // console.log(userInput);
         incrementScore();
+        // console.log(getItem.localStorage("tscore"));
         forumq2c.toggleClass("correct");
         forumq2c.attr("disabled", true);
         forum2btnjs.attr("disabled",true);
     
        
     }
+    // else statement for incorrect answer
     else {
         forumq2c.toggleClass("incorrect");
         forumq2c.attr("disabled",true);
@@ -118,17 +130,15 @@ var forum2btnjs = $('#forum2btn');
 
 
 // Question 5
-var correctq3 = $('#correct3');
-var incorrectq3 = $('#incorrect31, #incorrect32, #incorrect33');
-
 correctq3.on("click", function() {
     incrementScore();
+    // console.log(getItem.localStorage("tscore"));
     correctq3.toggleClass("correct"); 
     $("#correct3").attr("disabled", true);
     $('#incorrect31,#incorrect32,#incorrect33').attr("disabled",true);
 });
 
-
+// function for incorrect answer
 incorrectq3.on("click", function() {
     $(this).toggleClass("incorrect"); 
     $('#correct3').attr("disabled", true);
@@ -137,20 +147,18 @@ incorrectq3.on("click", function() {
 });
 
 // Question 6 forms 
-var forumq3c = $('#forumq3');
-var forum3btnjs = $('#forum3btn');
-
  forum3btnjs.on("click", function(){
     var userInput = forumq3c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "the last supper"){
+        // console.log(userinput);
         incrementScore();
+        // console.log(getItem.localStorage("tscore"));
         forumq3c.toggleClass("correct");
         forumq3c.attr("disabled", true);
         forum3btnjs.attr("disabled",true);
-    
-       
     }
+    // else statement for incorrect answer
     else {
         forumq3c.toggleClass("incorrect");
         forumq3c.attr("disabled",true);
@@ -160,17 +168,15 @@ var forum3btnjs = $('#forum3btn');
  });
 
 // Question 7 Multiple choice
-var correctq4 = $('#correct4');
-var incorrectq4 = $('#incorrect41, #incorrect42, #incorrect43');
-
 correctq4.on("click", function() {
     incrementScore();
+    // console.log(getItem.localStorage("tscore"));
     correctq4.toggleClass("correct"); 
     $("#correct4").attr("disabled", true);
     $('#incorrect41,#incorrect42,#incorrect43').attr("disabled",true);
 });
 
-
+// function for incorrect answer
 incorrectq4.on("click", function() {
     $(this).toggleClass("incorrect"); 
     $('#correct4').attr("disabled", true);
@@ -179,21 +185,20 @@ incorrectq4.on("click", function() {
 });
 
 // Question 8 forms 
-
-var forumq4c = $('#forumq4');
-var forum4btnjs = $('#forum4btn');
-
  forum4btnjs.on("click", function(){
     var userInput = forumq4c.val().toLowerCase();
     console.log(userInput);
     if( userInput == "greece"){
+        // console.log(userInput)
         incrementScore();
+        // console.log(getItem.localStorage("tscore"));
         forumq4c.toggleClass("correct");
         forumq4c.attr("disabled", true);
         forum4btnjs.attr("disabled",true);
     
        
     }
+    // else statement for incorrect answer
     else {
         forumq4c.toggleClass("incorrect");
         forumq4c.attr("disabled",true);
@@ -203,17 +208,15 @@ var forum4btnjs = $('#forum4btn');
  });
 
 // Question 9 Multiple choice 
-var correctq5 = $('#correct5');
-var incorrectq5 = $('#incorrect51, #incorrect52, #incorrect53');
-
 correctq5.on("click", function() {
     incrementScore();
+    // console.log(getItem.localStorage("tscore"));
     correctq5.toggleClass("correct"); 
     $("#correct5").attr("disabled", true);
     $('#incorrect51,#incorrect52,#incorrect53').attr("disabled",true);
 });
 
-
+// function for incorrect answer
 incorrectq5.on("click", function() {
     $(this).toggleClass("incorrect"); 
     $('#correct5').attr("disabled", true);
@@ -221,20 +224,19 @@ incorrectq5.on("click", function() {
     $('#incorrect51,#incorrect52,#incorrect53').attr("disabled",true);
 });
 //  Question 10 form
-var forumq5c = $('#forumq5');
-var forum5btnjs = $('#forum5btn');
-
  forum5btnjs.on("click", function(){
     var userInput = forumq5c.val().toLowerCase();
-    console.log(userInput);
+    // console.log(userInput);
     if( userInput == "cheese"){
         incrementScore();
+        // console.log(getItem.localStorage("tscore"));
         forumq5c.toggleClass("correct");
         forumq5c.attr("disabled", true);
         forum5btnjs.attr("disabled",true);
     
        
     }
+    // else statement for incorrect answer
     else {
         forumq5c.toggleClass("incorrect");
         forumq5c.attr("disabled",true);
@@ -242,22 +244,32 @@ var forum5btnjs = $('#forum5btn');
     }
    
  });
-//  decleares the final screen sxcore prompts
- var zeroOutOfTen = $('#zeroOutOfTen');
- var oneOutOfTen = $('#oneOutOfTen');
- var twoOutOfTen = $('#twoOutOfTen');
- var threeOutOfTen = $('#threeOutOfTen');
- var fourOutOfTen = $('#fourOutOfTen');
- var fiveOutOfTen = $('#fiveOutOfTen');
- var sixOutOfTen = $('#sixOutOfTen');
- var sevenOutOfTen = $('#sevenOutOfTen');
- var eightOutOfTen = $('#eightOutOfTen');
- var nineOutOfTen = $('#nineOutOfTen');
- var tenOutOfTen = $('#tenOutOfTen');
- 
+
+//  Functions
+
+//  function to clear the local data storage to avoid repeating users score getting messed up 
+function clear(){
+    localStorage.clear("tscore"); // clears "tscore" value in local storage
+    }
+
+
+    // decleares "tscore" and sets it to zero but uses a condtional to avoid reapeated resets to "tscore"
+if (localStorage.getItem("tscore") == null){ /* if the value of "tscore" is null or invalid it sets the value to zero mostly for the initializtion of "tscore"*/ 
+    localStorage.setItem("tscore", 0);
+    // console.log(getItem.localStorage("tscore"));
+}
+
+// function to increase score when userinput is correct
+function incrementScore() {
+    var currentScore = parseInt(localStorage.getItem("tscore")) || 0;  /* returns the integer value of "tscore" which will return 'Nan' if the value is 0 and then || sets the value to 0 */ 
+    currentScore++;
+    localStorage.setItem("tscore", currentScore);
+    // console.log(currentScore);
+}
+
 //  initalizes the css class of the prompts
  function styleFinalElements() {
-     $('.finalscreenclass').css({
+     $('.finalscreenclass').css({  /* declares the css properties in js to be used within the functions "initializeScoreMessages" */
          'color': 'white',
          'font-size': '20px',
          'text-align': 'center',
@@ -265,17 +277,17 @@ var forum5btnjs = $('#forum5btn');
      });
  }
 //  sets the css classes
- function initializeScoreMessages() {
+ function initializeScoreMessages(){ /* Function that adds the css classes to each of the score prompts the ".forEach(element)" jQuery function is used to iterate each prompt*/
      [zeroOutOfTen, oneOutOfTen, twoOutOfTen, threeOutOfTen, fourOutOfTen, fiveOutOfTen, 
       sixOutOfTen, sevenOutOfTen, eightOutOfTen, nineOutOfTen, tenOutOfTen].forEach(function(element) {
          element.hide().addClass('finalscreenclass');
      });
-     
-     styleFinalElements();
+     styleFinalElements(); // makes sure the correct css classes are added
  }
-//  shows the corresponding prompt to whatever score the user gets
+//  function to show the corresponding prompt to whatever score the user gets
  function displayScoreMessage() {
-     var score = parseInt(localStorage.getItem("tscore")) || 0;
+     var score = parseInt(localStorage.getItem("tscore")) || 0; // sets the score value to "tscore"(will be the same as "currentScore") and if NaN returned it will come back as zero since already initalized should just return 0-10 
+    //  console.log(getItem.localStorage("tscore"));
  
      if (score === 0) {
          zeroOutOfTen.show();
@@ -300,30 +312,33 @@ var forum5btnjs = $('#forum5btn');
      } else if (score === 10) {
          tenOutOfTen.show();
      } else {
-         console.error("Score out of range");
+         console.error("Score out of range"); // incase of score error
      }
  }
-//   when page loads the corresponding score message is shown
- $(document).ready(function() {
-     initializeScoreMessages();
- });
- 
-// Initialize score messages when the document is ready
-$(document).ready(function() {
-    initializeScoreMessages();
-    displayScoreMessage();
-});
+
+
 // Function to update the final score display
 function updateFinalScore() {
     var finalScore = parseInt(localStorage.getItem("tscore")) || 0;
     console.log(finalScore);
-    $('#finalscore').toggleClass("fsdisplay");
-    $('#finalscore').text( "Score:" +" "+ finalScore+"/10");
+    $('#finalscore').toggleClass("fsdisplay"); // Used to set the proper css class
+    $('#finalscore').text( "Score:" +" "+ finalScore+"/10"); // DOM Manupulation to update text with the finalScore variable
 }
 
-// runs all the functions when each page is loaded 
+// Function for each "document" or html to be updated with the proper score when loaded
 $(document).ready(function() {
     initializeScoreMessages();
     displayScoreMessage();
     updateFinalScore(); 
 });
+
+// // Initialize score messages when the document is ready
+// $(document).ready(function() {
+//     initializeScoreMessages();
+//     displayScoreMessage();
+// });
+
+// //   when page loads the corresponding score message is shown
+// $(document).ready(function() {
+//     initializeScoreMessages();
+// });
